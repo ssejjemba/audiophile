@@ -61,43 +61,43 @@ export const {
   },
   utils: {
     // Abbreviated margin properties
-    m: (value: any) => ({
+    m: (value: string) => ({
       margin: value,
     }),
-    mt: (value: any) => ({
+    mt: (value: string) => ({
       marginTop: value,
     }),
-    mr: (value: any) => ({
+    mr: (value: string) => ({
       marginRight: value,
     }),
-    mb: (value: any) => ({
+    mb: (value: string) => ({
       marginBottom: value,
     }),
-    ml: (value: any) => ({
+    ml: (value: string) => ({
       marginLeft: value,
     }),
-    mx: (value: any) => ({
+    mx: (value: string) => ({
       marginLeft: value,
       marginRight: value,
     }),
-    my: (value: any) => ({
+    my: (value: string) => ({
       marginTop: value,
       marginBottom: value,
     }),
 
     // A property for applying width/height together
-    size: (value: any) => ({
+    size: (value: string) => ({
       width: value,
       height: value,
     }),
 
     // A property to apply linear gradient
-    linearGradient: (value: any) => ({
+    linearGradient: (value: string) => ({
       backgroundImage: `linear-gradient(${value})`,
     }),
 
     // An abbreviated property for border-radius
-    br: (value: any) => ({
+    br: (value: string) => ({
       borderRadius: value,
     }),
   },
