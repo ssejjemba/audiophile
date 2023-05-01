@@ -55,6 +55,9 @@ export const {
       overline: "10px",
       sub_title: "1px",
     },
+    sizes: {
+      section_padding: "165px",
+    },
   },
   media: {
     bp1: "(min-width: 480px)",
