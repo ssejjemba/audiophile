@@ -88,6 +88,15 @@ export const {
       marginBottom: value,
     }),
 
+    px: (value: string) => ({
+      paddingLeft: value,
+      paddingRight: value,
+    }),
+    py: (value: string) => ({
+      paddingTop: value,
+      paddingBottom: value,
+    }),
+
     // A property for applying width/height together
     size: (value: string) => ({
       width: value,
