@@ -1,5 +1,6 @@
 import { styled } from "@stitches/react";
 import { NavigationBar } from "../../sections/navigation/NavigationBar";
+import { Hero } from "../../sections/hero/Hero";
 
 const HomeSection = styled("section", {
   background: "$secondary",
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <HomeSection>
       <NavigationBar />
+      <Hero />
     </HomeSection>
   );
 }

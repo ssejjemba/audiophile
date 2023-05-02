@@ -73,6 +73,10 @@ const globalStyles = globalCss({
     lineHeight: "$sub_title",
     letterSpacing: "$sub_title",
   },
+  "button, button:hover, button:focused": {
+    outline: "none",
+    border: "none",
+  },
 });
 
 function App() {
