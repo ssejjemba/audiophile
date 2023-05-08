@@ -19,6 +19,8 @@ const CardImage = styled("div", {
   position: "absolute",
   top: "-165px",
   left: "0",
+  borderTopLeftRadius: "8px",
+  borderTopRightRadius: "8px",
 });
 
 const CardImg = styled("img", {
@@ -26,6 +28,8 @@ const CardImg = styled("img", {
   height: "100%",
   background: "transparent",
   objectFit: "cover",
+  borderTopLeftRadius: "8px",
+  borderTopRightRadius: "8px",
 });
 
 const CardDetails = styled("div", {
