@@ -1,4 +1,5 @@
 import { styled } from "@stitches/react";
+import { Card } from "../../components/card/Card";
 
 const CategoriesSection = styled("section", {
   width: "100%",
@@ -8,7 +9,7 @@ const CategoriesSection = styled("section", {
   justifyContent: "center",
   paddingLeft: "165px",
   paddingRight: "165px",
-  background: "$gray400",
+  background: "$gray500",
 });
 
 const CategoriesContainer = styled("section", {
@@ -18,13 +19,18 @@ const CategoriesContainer = styled("section", {
   justifyContent: "space-evenly",
   width: "100%",
   height: "284px",
-  background: "OrangeRed",
 });
 
 export const Categories = () => {
   return (
     <CategoriesSection>
-      <CategoriesContainer></CategoriesContainer>
+      <CategoriesContainer>
+        <Card
+          title="Headphones"
+          src="/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
+          alt="Headphones"
+        />
+      </CategoriesContainer>
     </CategoriesSection>
   );
 };
