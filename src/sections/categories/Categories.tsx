@@ -7,8 +7,7 @@ const CategoriesSection = styled("section", {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  paddingLeft: "165px",
-  paddingRight: "165px",
+  padding: " 0 100px",
   background: "$gray500",
 });
 
@@ -29,6 +28,18 @@ export const Categories = () => {
           title="Headphones"
           src="/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
           alt="Headphones"
+        />
+
+        <Card
+          title="Speakers"
+          src="/product-zx9-speaker/desktop/image-category-page-preview.jpg"
+          alt="Speakers"
+        />
+
+        <Card
+          title="Earphones"
+          src="/product-yx1-earphones/desktop/image-category-page-preview.jpg"
+          alt="Earphones"
         />
       </CategoriesContainer>
     </CategoriesSection>
