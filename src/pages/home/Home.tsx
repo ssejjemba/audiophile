@@ -2,6 +2,7 @@ import { styled } from "@stitches/react";
 import { NavigationBar } from "../../sections/navigation/NavigationBar";
 import { Hero } from "../../sections/hero/Hero";
 import { Categories } from "../../sections/categories/Categories";
+import { Zx9Speakers } from "../../sections/zx9-speakers/Zx9Speakers";
 
 const HomeSection = styled("section", {
   background: "$secondary",
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
       </HomeSection>
       <Categories />
+      <Zx9Speakers />
     </>
   );
 }
