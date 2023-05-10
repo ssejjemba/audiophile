@@ -3,6 +3,7 @@ import { NavigationBar } from "../../sections/navigation/NavigationBar";
 import { Hero } from "../../sections/hero/Hero";
 import { Categories } from "../../sections/categories/Categories";
 import { Zx9Speakers } from "../../sections/zx9-speakers/Zx9Speakers";
+import { Zx7Speakers } from "../../sections/zx7-speakers/Zx7Speakers";
 
 const HomeSection = styled("section", {
   background: "$secondary",
@@ -21,6 +22,7 @@ export default function Home() {
       </HomeSection>
       <Categories />
       <Zx9Speakers />
+      <Zx7Speakers />
     </>
   );
 }
