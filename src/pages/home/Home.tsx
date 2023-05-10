@@ -6,6 +6,7 @@ import { Zx9Speakers } from "../../sections/zx9-speakers/Zx9Speakers";
 import { Zx7Speakers } from "../../sections/zx7-speakers/Zx7Speakers";
 import { Yx1Earphones } from "../../sections/yx1-earphones/Yx1Earphones";
 import { Blog } from "../../sections/blog/Blog";
+import { Footer } from "../../sections/footer/Footer";
 
 const HomeSection = styled("section", {
   background: "$secondary",
@@ -27,6 +28,7 @@ export default function Home() {
       <Zx7Speakers />
       <Yx1Earphones />
       <Blog />
+      <Footer />
     </>
   );
 }
