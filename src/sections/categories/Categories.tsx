@@ -7,7 +7,7 @@ const CategoriesSection = styled("section", {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  padding: "100px 100px 0",
+  padding: "200px 100px 0",
   background: "$gray500",
 });
 
