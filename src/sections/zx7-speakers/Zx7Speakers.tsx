@@ -1,7 +1,8 @@
 import { styled } from "@stitches/react";
+import { ProductButton } from "../../components/buttons/ProductButton";
 
 const Zx7SpeakerSection = styled("section", {
-  height: "45vh",
+  height: "50vh",
   width: "100%",
   padding: "0 100px",
   display: "flex",
@@ -33,27 +34,13 @@ const ProductName = styled("h1", {
   color: "$white",
 });
 
-const CTAButton = styled("button", {
-  border: "none",
-  outline: "none",
-  padding: "15px 30px",
-  background: "$black",
-  color: "$white",
-  cursor: "pointer",
-  marginTop: "16px",
-
-  "&:hover": {
-    opacity: "0.8",
-  },
-});
-
 export const Zx7Speakers = () => {
   return (
     <Zx7SpeakerSection>
       <Zx7SpeakerContainer>
         <SpeakerDetailsContainer>
           <ProductName>ZX7 SPEAKER</ProductName>
-          <CTAButton>See Product</CTAButton>
+          <ProductButton text="See Product" />
         </SpeakerDetailsContainer>
       </Zx7SpeakerContainer>
     </Zx7SpeakerSection>
