@@ -1,8 +1,8 @@
 import { styled } from "@stitches/react";
 import { ProductButton } from "../../components/buttons/ProductButton";
 
-const Zx7SpeakerSection = styled("section", {
-  height: "50vh",
+const Yx1EarphonesSection = styled("section", {
+  height: "60vh",
   width: "100%",
   padding: "0 100px",
   display: "flex",
@@ -10,39 +10,49 @@ const Zx7SpeakerSection = styled("section", {
   justifyContent: "center",
 });
 
-const Zx7SpeakerContainer = styled("div", {
+const Yx1EarphonesContainer = styled("div", {
   height: "320px",
   width: "100%",
   display: "flex",
+  gap: "30px",
   borderRadius: "8px",
-  backgroundImage: "url(/local/desktop/zx7-speaker-bg.png)",
+});
+
+const SpeakerImageContainer = styled("div", {
+  width: "50%",
+  height: "100%",
+  backgroundImage: "url(home/desktop/image-earphones-yx1.jpg)",
   backgroundSize: "cover",
+  backgroundPosition: "center",
+  borderRadius: "8px",
 });
 
 const SpeakerDetailsContainer = styled("div", {
   width: "50%",
   height: "100%",
-  padding: "0 95px 0",
+  background: "$gray400",
   display: "flex",
   flexDirection: "column",
-  alignItems: "flex-start",
+  alignItems: "center",
   justifyContent: "center",
   gap: "32px",
+  borderRadius: "8px",
 });
 
 const ProductName = styled("h1", {
-  color: "$white",
+  color: "$black",
 });
 
-export const Zx7Speakers = () => {
+export const Yx1Earphones = () => {
   return (
-    <Zx7SpeakerSection>
-      <Zx7SpeakerContainer>
+    <Yx1EarphonesSection>
+      <Yx1EarphonesContainer>
+        <SpeakerImageContainer></SpeakerImageContainer>
         <SpeakerDetailsContainer>
-          <ProductName>ZX7 SPEAKER</ProductName>
+          <ProductName>YX1 SPEAKER</ProductName>
           <ProductButton text="See Product" />
         </SpeakerDetailsContainer>
-      </Zx7SpeakerContainer>
-    </Zx7SpeakerSection>
+      </Yx1EarphonesContainer>
+    </Yx1EarphonesSection>
   );
 };
