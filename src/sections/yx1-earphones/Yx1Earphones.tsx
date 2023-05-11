@@ -1,4 +1,5 @@
 import { styled } from "@stitches/react";
+import { Link } from "react-router-dom";
 import { ProductButton } from "../../components/buttons/ProductButton";
 
 const Yx1EarphonesSection = styled("section", {
@@ -50,7 +51,9 @@ export const Yx1Earphones = () => {
         <SpeakerImageContainer></SpeakerImageContainer>
         <SpeakerDetailsContainer>
           <ProductName>YX1 SPEAKER</ProductName>
-          <ProductButton text="See Product" />
+          <Link to={`category-headphones`}>
+            <ProductButton text="See Product" />
+          </Link>
         </SpeakerDetailsContainer>
       </Yx1EarphonesContainer>
     </Yx1EarphonesSection>
