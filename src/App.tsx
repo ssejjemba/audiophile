@@ -1,6 +1,7 @@
 // import { DesignSystem } from "./pages/design_system/DesignSystem";
 import { globalCss } from "../stitches.config";
 import Home from "./pages/home/Home";
+import { CategoryHeadphones } from "./pages/categories/CategoryHeadphones";
 
 const globalStyles = globalCss({
   "*": {
@@ -81,7 +82,12 @@ const globalStyles = globalCss({
 
 function App() {
   globalStyles();
-  return <Home />;
+  return (
+    <>
+      <Home />
+      <CategoryHeadphones />
+    </>
+  );
 }
 
 export default App;
