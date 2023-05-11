@@ -1,5 +1,6 @@
 import { styled } from "@stitches/react";
 import { Card } from "../../components/card/Card";
+import categorydata from "../../data/categories.json";
 
 const CategoriesSection = styled("section", {
   width: "100%",
@@ -24,23 +25,14 @@ export const Categories = () => {
   return (
     <CategoriesSection>
       <CategoriesContainer>
-        <Card
-          title="Headphones"
-          src="/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
-          alt="Headphones"
-        />
-
-        <Card
-          title="Speakers"
-          src="/product-zx9-speaker/desktop/image-category-page-preview.jpg"
-          alt="Speakers"
-        />
-
-        <Card
-          title="Earphones"
-          src="/product-yx1-earphones/desktop/image-category-page-preview.jpg"
-          alt="Earphones"
-        />
+        {categorydata.categories.map((category) => (
+          <Card
+            title={category.title}
+            src={category.src}
+            alt={category.alt}
+            key={category.id}
+          />
+        ))}
       </CategoriesContainer>
     </CategoriesSection>
   );
