@@ -1,0 +1,19 @@
+[
+  {
+    "productName": "YX1 SPEAKER",
+    "productThumbnail": "url(home/desktop/image-earphones-yx1.jpg)",
+    "productURL": "category-Y-headphones"
+  },
+  {
+    "productName": "ZX7 SPEAKER",
+    "productThumbnail": "url(/local/desktop/zx7-speaker-bg.png)",
+    "productURL": "category-7-speakers"
+  },
+  {
+    "productName": "ZX9 SPEAKER",
+    "productThumbnail": "url(/home/desktop/pattern-circles.svg)",
+    "productSrc": "/home/desktop/image-speaker-zx9.png",
+    "productAlt": "Zx9-speaker-image",
+    "productURL": "category-9-speakers"
+  }
+]

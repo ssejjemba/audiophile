@@ -5,6 +5,9 @@ import { ProductButton } from "../../components/buttons/ProductButton";
 type ProductExpoProps = {
   ProductName: string;
   ProductThumbnail: string;
+  ProductURL: string;
+  ProductSrc?: string;
+  ProductAlt?: string;
   ProductDetails?: string;
 };
 
@@ -25,7 +28,13 @@ const ProductThumbnail = styled("div", {
   backgroundImage: `${(props: ProductExpoProps) => props.ProductThumbnail}`,
 });
 
-const SpeakerDetailsContainer = styled("div", {
+const ProductImg = styled("img", {
+  display: "inline-block",
+  width: "50%",
+  height: "auto",
+});
+
+const ProductDetailsContainer = styled("div", {
   width: "50%",
   height: "100%",
   background: "$gray400",
@@ -53,17 +62,16 @@ const ProductDetails = styled("p", {
 export const Yx1Earphones = (props: ProductExpoProps) => {
   return (
     <ProductContainer>
-      <ProductThumbnail></ProductThumbnail>
-      <SpeakerDetailsContainer>
+      <ProductThumbnail>
+        <ProductImg src={props.ProductSrc} alt={props.ProductAlt} />
+      </ProductThumbnail>
+      <ProductDetailsContainer>
         <ProductName>{props.ProductName}</ProductName>
-        <ProductDetails>
-          Upgrade to premium speakers that are phenomenally built to deliver
-          truly remarkable sound.
-        </ProductDetails>
-        <Link to={`category-headphones`}>
+        <ProductDetails>{props.ProductDetails}</ProductDetails>
+        <Link to={props.ProductURL}>
           <ProductButton text="See Product" />
         </Link>
-      </SpeakerDetailsContainer>
+      </ProductDetailsContainer>
     </ProductContainer>
   );
 };
