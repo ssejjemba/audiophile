@@ -9,24 +9,19 @@ export type CardProps = {
 const CategoryCard = styled("div", {
   width: "350px",
   height: "284px",
-  position: "relative",
+  background: "$gray400",
+  borderRadius: "8px",
 });
 
 const CardImage = styled("div", {
   width: "100%",
-  height: "100%",
-  background: "transparent",
-  position: "absolute",
-  top: "-165px",
-  left: "0",
-  borderTopLeftRadius: "8px",
-  borderTopRightRadius: "8px",
+  height: "50%",
+  transform: "translateY(-173px)",
 });
 
 const CardImg = styled("img", {
   width: "100%",
-  height: "100%",
-  background: "transparent",
+  height: "auto",
   objectFit: "cover",
   borderTopLeftRadius: "8px",
   borderTopRightRadius: "8px",
@@ -34,13 +29,14 @@ const CardImg = styled("img", {
 
 const CardDetails = styled("div", {
   width: "100%",
-  height: "85%",
+  height: "50%",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   background: "$gray400",
-  borderRadius: "8px",
-  padding: "116px 108.5px 30px",
+  paddingTop: "44px",
+  borderBottomLeftRadius: "8px",
+  borderBottomRightRadius: "8px",
 });
 
 const CardTitle = styled("h3", {
@@ -50,11 +46,8 @@ const CardTitle = styled("h3", {
   lineHeight: "25px",
 });
 
-const CardButton = styled("button", {
-  margin: "0",
-  border: "0",
-  outline: "none",
-  cursor: "pointer",
+const CardLink = styled("a", {
+  textDecoration: "none",
   background: "transparent",
   padding: "8px 12px",
   display: "flex",
@@ -85,7 +78,7 @@ export const Card = (props: CardProps) => {
       </CardImage>
       <CardDetails>
         <CardTitle>{props.title}</CardTitle>
-        <CardButton>
+        <CardLink href="">
           <ButtonText>shop</ButtonText>
           <svg
             width="8"
@@ -100,7 +93,7 @@ export const Card = (props: CardProps) => {
               strokeWidth="2"
             />
           </svg>
-        </CardButton>
+        </CardLink>
       </CardDetails>
     </CategoryCard>
   );

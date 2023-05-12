@@ -5,10 +5,7 @@ import categorydata from "../../data/categories.json";
 const CategoriesSection = styled("section", {
   width: "100%",
   height: "100vh",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  padding: "200px 100px 0",
+  padding: "270px 100px 0",
   background: "$gray500",
 });
 
@@ -18,7 +15,7 @@ const CategoriesContainer = styled("section", {
   alignItems: "flex-start",
   justifyContent: "space-evenly",
   width: "100%",
-  height: "284px",
+  height: "auto",
 });
 
 export const Categories = () => {
