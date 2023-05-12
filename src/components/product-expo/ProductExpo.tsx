@@ -9,13 +9,14 @@ type ProductExpoProps = {
   ProductSrc?: string;
   ProductAlt?: string;
   ProductDetails?: string;
+  gutterX?: string;
+  padX?: string;
 };
 
 const ProductContainer = styled("div", {
   height: "320px",
   width: "100%",
   display: "flex",
-  gap: "30px",
   borderRadius: "8px",
 });
 
@@ -25,7 +26,6 @@ const ProductThumbnail = styled("div", {
   backgroundSize: "cover",
   backgroundPosition: "center",
   borderRadius: "8px",
-  backgroundImage: `${(props: ProductExpoProps) => props.ProductThumbnail}`,
 });
 
 const ProductImg = styled("img", {
@@ -59,13 +59,15 @@ const ProductDetails = styled("p", {
   lineHeight: "25px",
 });
 
-export const Yx1Earphones = (props: ProductExpoProps) => {
+export const ProductExpo = (props: ProductExpoProps) => {
   return (
-    <ProductContainer>
-      <ProductThumbnail>
+    <ProductContainer style={{ gap: props.gutterX }}>
+      <ProductThumbnail
+        style={{ backgroundImage: `url(${props.ProductThumbnail})` }}
+      >
         <ProductImg src={props.ProductSrc} alt={props.ProductAlt} />
       </ProductThumbnail>
-      <ProductDetailsContainer>
+      <ProductDetailsContainer style={{ padding: props.padX }}>
         <ProductName>{props.ProductName}</ProductName>
         <ProductDetails>{props.ProductDetails}</ProductDetails>
         <Link to={props.ProductURL}>

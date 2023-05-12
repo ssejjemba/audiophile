@@ -4,7 +4,7 @@ import { Hero } from "../../sections/hero/Hero";
 import { Categories } from "../../sections/categories/Categories";
 import { Zx9Speakers } from "../../sections/zx9-speakers/Zx9Speakers";
 import { Zx7Speakers } from "../../sections/zx7-speakers/Zx7Speakers";
-import { Yx1Earphones } from "../../sections/yx1-earphones/Yx1Earphones";
+import { ProductEarphones } from "../../sections/product-earphones/productEarphones";
 import { Blog } from "../../sections/blog/Blog";
 import { Footer } from "../../sections/footer/Footer";
 
@@ -26,7 +26,7 @@ export default function Home() {
       <Categories />
       <Zx9Speakers />
       <Zx7Speakers />
-      <Yx1Earphones />
+      <ProductEarphones />
       <Blog />
       <Footer />
     </>
