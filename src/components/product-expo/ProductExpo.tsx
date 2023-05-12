@@ -9,11 +9,17 @@ type ProductExpoProps = {
   ProductSrc?: string;
   ProductAlt?: string;
   ProductDetails?: string;
+  height?: string;
   gutterX?: string;
   padX?: string;
-  backImg?: string;
+  size?: string;
   backColor?: string;
+  display?: "flex";
+  flexDir?: "row" | "row-reverse";
   flexAlign?: string;
+  background?: string;
+  objCenter?: "center";
+  objEnd?: "flex-end";
 };
 
 const ProductContainer = styled("div", {
@@ -21,6 +27,7 @@ const ProductContainer = styled("div", {
   width: "100%",
   display: "flex",
   borderRadius: "8px",
+  backgroundSize: "cover",
 });
 
 const ProductThumbnail = styled("div", {
@@ -65,19 +72,22 @@ export const ProductExpo = (props: ProductExpoProps) => {
     <ProductContainer
       style={{
         gap: props.gutterX,
-        backgroundImage: `url(${props.backImg})`,
-        backgroundSize: "cover",
+        flexDirection: props.flexDir,
+        height: props.height,
+        background: props.background,
+        backgroundSize: props.size,
       }}
     >
-      {props.ProductThumbnail ? (
-        <ProductThumbnail
-          style={{ backgroundImage: `url(${props.ProductThumbnail})` }}
-        >
-          <ProductImg src={props.ProductSrc} alt={props.ProductAlt} />
-        </ProductThumbnail>
-      ) : (
-        ""
-      )}
+      <ProductThumbnail
+        style={{
+          backgroundImage: `url(${props.ProductThumbnail})`,
+          display: props.display,
+          alignItems: props.objEnd,
+          justifyContent: props.objCenter,
+        }}
+      >
+        <ProductImg src={props.ProductSrc} alt={props.ProductAlt} />
+      </ProductThumbnail>
       <ProductDetailsContainer
         style={{
           padding: props.padX,

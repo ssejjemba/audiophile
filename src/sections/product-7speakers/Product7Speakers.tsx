@@ -15,10 +15,11 @@ export const Product7Speakers = () => {
     <Speaker7Section>
       <ProductExpo
         ProductName={productData[1].productName}
-        backImg={productData[1].productThumbnail}
+        background={`url(${productData[1].productThumbnail})`}
         ProductURL={productData[1].productURL}
         padX="0 95px 0"
         flexAlign="flex-start"
+        flexDir="row-reverse"
       />
     </Speaker7Section>
   );

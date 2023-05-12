@@ -2,7 +2,7 @@ import { styled } from "@stitches/react";
 import { NavigationBar } from "../../sections/navigation/NavigationBar";
 import { Hero } from "../../sections/hero/Hero";
 import { Categories } from "../../sections/categories/Categories";
-import { Zx9Speakers } from "../../sections/zx9-speakers/Zx9Speakers";
+import { Product9Speakers } from "../../sections/product-9speakers/Product9Speakers";
 import { Product7Speakers } from "../../sections/product-7speakers/Product7Speakers";
 import { ProductEarphones } from "../../sections/product-earphones/productEarphones";
 import { Blog } from "../../sections/blog/Blog";
@@ -24,7 +24,7 @@ export default function Home() {
         <Hero />
       </HomeSection>
       <Categories />
-      <Zx9Speakers />
+      <Product9Speakers />
       <Product7Speakers />
       <ProductEarphones />
       <Blog />

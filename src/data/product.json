@@ -11,9 +11,11 @@
   },
   {
     "productName": "ZX9 SPEAKER",
-    "productThumbnail": "url/home/desktop/pattern-circles.svg",
+    "productThumbnail": "",
     "productSrc": "/home/desktop/image-speaker-zx9.png",
     "productAlt": "Zx9-speaker-image",
-    "productURL": "category-9-speakers"
+    "productDetails": "Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound",
+    "productURL": "category-9-speakers",
+    "background": "/home/desktop/pattern-circles.svg"
   }
 ]
