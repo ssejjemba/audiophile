@@ -4,13 +4,16 @@ import { ProductButton } from "../../components/buttons/ProductButton";
 
 type ProductExpoProps = {
   ProductName: string;
-  ProductThumbnail: string;
+  ProductThumbnail?: string;
   ProductURL: string;
   ProductSrc?: string;
   ProductAlt?: string;
   ProductDetails?: string;
   gutterX?: string;
   padX?: string;
+  backImg?: string;
+  backColor?: string;
+  flexAlign?: string;
 };
 
 const ProductContainer = styled("div", {
@@ -37,10 +40,8 @@ const ProductImg = styled("img", {
 const ProductDetailsContainer = styled("div", {
   width: "50%",
   height: "100%",
-  background: "$gray400",
   display: "flex",
   flexDirection: "column",
-  alignItems: "center",
   justifyContent: "center",
   gap: "32px",
   borderRadius: "8px",
@@ -61,13 +62,29 @@ const ProductDetails = styled("p", {
 
 export const ProductExpo = (props: ProductExpoProps) => {
   return (
-    <ProductContainer style={{ gap: props.gutterX }}>
-      <ProductThumbnail
-        style={{ backgroundImage: `url(${props.ProductThumbnail})` }}
+    <ProductContainer
+      style={{
+        gap: props.gutterX,
+        backgroundImage: `url(${props.backImg})`,
+        backgroundSize: "cover",
+      }}
+    >
+      {props.ProductThumbnail ? (
+        <ProductThumbnail
+          style={{ backgroundImage: `url(${props.ProductThumbnail})` }}
+        >
+          <ProductImg src={props.ProductSrc} alt={props.ProductAlt} />
+        </ProductThumbnail>
+      ) : (
+        ""
+      )}
+      <ProductDetailsContainer
+        style={{
+          padding: props.padX,
+          background: props.backColor,
+          alignItems: props.flexAlign,
+        }}
       >
-        <ProductImg src={props.ProductSrc} alt={props.ProductAlt} />
-      </ProductThumbnail>
-      <ProductDetailsContainer style={{ padding: props.padX }}>
         <ProductName>{props.ProductName}</ProductName>
         <ProductDetails>{props.ProductDetails}</ProductDetails>
         <Link to={props.ProductURL}>

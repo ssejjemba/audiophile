@@ -19,6 +19,8 @@ export const ProductEarphones = () => {
         ProductThumbnail={productData[0].productThumbnail}
         ProductURL={productData[0].productURL}
         gutterX="30px"
+        backColor="hsl(0, 0%, 95%)"
+        flexAlign="center"
       />
     </EarphonesSection>
   );
