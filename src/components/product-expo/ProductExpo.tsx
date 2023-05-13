@@ -6,6 +6,7 @@ type ProductExpoProps = {
   ProductName: string;
   ProductThumbnail?: string;
   ProductURL: string;
+  ButtonTheme: string;
   ProductSrc?: string;
   ProductAlt?: string;
   ProductDetails?: string;
@@ -98,7 +99,7 @@ export const ProductExpo = (props: ProductExpoProps) => {
         <ProductName>{props.ProductName}</ProductName>
         <ProductDetails>{props.ProductDetails}</ProductDetails>
         <Link to={props.ProductURL}>
-          <ProductButton text="See Product" />
+          <ProductButton theme={props.ButtonTheme} text="See Product" />
         </Link>
       </ProductDetailsContainer>
     </ProductContainer>

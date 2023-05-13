@@ -17,6 +17,7 @@ export const Product7Speakers = () => {
         ProductName={productData[1].productName}
         background={`url(${productData[1].productThumbnail})`}
         ProductURL={productData[1].productURL}
+        ButtonTheme="light"
         padX="0 95px 0"
         flexAlign="flex-start"
         flexDir="row-reverse"

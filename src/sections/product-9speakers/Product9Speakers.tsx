@@ -21,6 +21,7 @@ export const Product9Speakers = () => {
         ProductSrc={productData[2].productSrc}
         ProductAlt={productData[2].productAlt}
         ProductDetails={productData[2].productDetails}
+        ButtonTheme="dark"
         height="500px"
         padX="50px 95px 0"
         size="auto"
