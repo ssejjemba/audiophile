@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/category-headphones",
+    path: "/category-Y-headphones",
     element: <CategoryHeadphones />,
   },
 ]);
