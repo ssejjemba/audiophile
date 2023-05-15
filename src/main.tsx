@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page.tsx";
 import App from "./App.tsx";
-import { CategoryHeadphones } from "./pages/categories/CategoryHeadphones.tsx";
-import { CategorySpeakers } from "./pages/categories/CategorySpeakers.tsx";
-import { CategoryEarphones } from "./pages/categories/CategoryEarphones.tsx";
+import { CategoryHeadphones } from "./pages/categories/Category.tsx";
+import { CategorySpeakers } from "./pages/categories/Category.tsx";
+import { CategoryEarphones } from "./pages/categories/Category.tsx";
 import productData from "./data/product.json";
 
 const router = createBrowserRouter([
