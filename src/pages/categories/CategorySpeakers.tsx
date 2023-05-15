@@ -20,14 +20,10 @@ const GadgetSection = styled("section", {
 export const CategorySpeakers = () => {
   return (
     <>
-      <CategoryHero
-        title={gadgetData.speakers[0].gadgetName.slice(
-          gadgetData.speakers[0].gadgetName.lastIndexOf(" ")
-        )}
-      />
+      <CategoryHero title={gadgetData[1].productTitle} />
 
       <GadgetContainer>
-        {gadgetData.speakers.map((card) => (
+        {gadgetData[1]?.speakers?.map((card) => (
           <GadgetSection>
             <GadgetCard
               GadgetName={card.gadgetName}

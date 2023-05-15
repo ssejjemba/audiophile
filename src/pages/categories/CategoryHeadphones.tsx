@@ -20,13 +20,9 @@ const GadgetSection = styled("section", {
 export const CategoryHeadphones = () => {
   return (
     <>
-      <CategoryHero
-        title={gadgetData.headphones[0].gadgetName.slice(
-          gadgetData.headphones[0].gadgetName.lastIndexOf(" ")
-        )}
-      />
+      <CategoryHero title={gadgetData[0].productTitle} />
       <GadgetContainer>
-        {gadgetData.headphones.map((card) => (
+        {gadgetData[0]?.headphones?.map((card) => (
           <GadgetSection>
             <GadgetCard
               GadgetName={card.gadgetName}

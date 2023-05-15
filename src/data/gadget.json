@@ -1,47 +1,54 @@
-{
-  "headphones": [
-    {
-      "gadgetName": "XX99 Mark II Headphones",
-      "IsNewGadgetLabel": true,
-      "IsEvenCard": true,
-      "gadgetImageURL": "/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg",
-      "gadgetImageAlt": "XX99 Mark II Headphones Image",
-      "gadgetDetails": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
-    },
-    {
-      "gadgetName": "XX99 Mark I Headphones",
-      "IsNewGadgetLabel": false,
-      "IsEvenCard": false,
-      "gadgetImageURL": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
-      "gadgetImageAlt": "XX99 Mark I Headphones Image",
-      "gadgetDetails": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go."
-    },
+[
+  {
+    "productTitle": "headphones",
+    "headphones": [
+      {
+        "gadgetName": "XX99 Mark II Headphones",
+        "IsNewGadgetLabel": true,
+        "IsEvenCard": true,
+        "gadgetImageURL": "/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg",
+        "gadgetImageAlt": "XX99 Mark II Headphones Image",
+        "gadgetDetails": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
+      },
+      {
+        "gadgetName": "XX99 Mark I Headphones",
+        "IsNewGadgetLabel": false,
+        "IsEvenCard": false,
+        "gadgetImageURL": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
+        "gadgetImageAlt": "XX99 Mark I Headphones Image",
+        "gadgetDetails": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go."
+      },
 
-    {
-      "gadgetName": "XX59 Headphones",
-      "IsNewGadgetLabel": false,
-      "IsEvenCard": true,
-      "gadgetImageURL": "/product-xx59-headphones/desktop/image-category-page-preview.jpg",
-      "gadgetImageAlt": "XX59 Headphones Image",
-      "gadgetDetails": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move."
-    }
-  ],
-  "speakers": [
-    {
-      "gadgetName": "ZX9 SPEAKER",
-      "IsNewGadgetLabel": true,
-      "IsEvenCard": true,
-      "gadgetImageURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
-      "gadgetImageAlt": "ZX9 SPEAKER Image",
-      "gadgetDetails": "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups."
-    },
-    {
-      "gadgetName": "ZX7 SPEAKER",
-      "IsNewGadgetLabel": false,
-      "IsEvenCard": false,
-      "gadgetImageURL": "/product-zx7-speaker/desktop/image-category-page-preview.jpg",
-      "gadgetImageAlt": "ZX7 SPEAKER Image",
-      "gadgetDetails": "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use."
-    }
-  ]
-}
+      {
+        "gadgetName": "XX59 Headphones",
+        "IsNewGadgetLabel": false,
+        "IsEvenCard": true,
+        "gadgetImageURL": "/product-xx59-headphones/desktop/image-category-page-preview.jpg",
+        "gadgetImageAlt": "XX59 Headphones Image",
+        "gadgetDetails": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move."
+      }
+    ]
+  },
+
+  {
+    "productTitle": "Speakers",
+    "speakers": [
+      {
+        "gadgetName": "ZX9 SPEAKER",
+        "IsNewGadgetLabel": true,
+        "IsEvenCard": true,
+        "gadgetImageURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
+        "gadgetImageAlt": "ZX9 SPEAKER Image",
+        "gadgetDetails": "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups."
+      },
+      {
+        "gadgetName": "ZX7 SPEAKER",
+        "IsNewGadgetLabel": false,
+        "IsEvenCard": false,
+        "gadgetImageURL": "/product-zx7-speaker/desktop/image-category-page-preview.jpg",
+        "gadgetImageAlt": "ZX7 SPEAKER Image",
+        "gadgetDetails": "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use."
+      }
+    ]
+  }
+]
