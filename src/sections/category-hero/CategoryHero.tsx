@@ -5,9 +5,9 @@ export type CategoryHeroProps = {
   title: string;
 };
 
-const CategoryHeroSection = styled("section", {
+const CategoryHeroSection = styled("header", {
   width: "100%",
-  height: "40vh",
+  height: "50vh",
   padding: "0 100px",
   background: "$secondary",
 });

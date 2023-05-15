@@ -3,7 +3,13 @@ import gadgetData from "../../data/gadget.json";
 import { GadgetCard } from "../../components/card/GadgetCard";
 import { styled } from "@stitches/react";
 
-const SectionGadget = styled("section", {
+const GadgetContainer = styled("main", {
+  width: "100%",
+  height: "100%",
+  padding: "0 100px",
+});
+
+const GadgetSection = styled("section", {
   width: "100%",
   height: "100vh",
   padding: "0 100px",
@@ -15,21 +21,25 @@ export const CategoryHeadphones = () => {
   return (
     <>
       <CategoryHero
-        title={gadgetData.headphones.gadgetName.slice(
-          gadgetData.headphones.gadgetName.lastIndexOf(" "),
+        title={gadgetData.headphones[0].gadgetName.slice(
+          gadgetData.headphones[0].gadgetName.lastIndexOf(" "),
           -1
         )}
       />
-      <SectionGadget>
-        <GadgetCard
-          GadgetName={gadgetData.headphones.gadgetName}
-          GadgetDetails={gadgetData.headphones.gadgetDetails}
-          Src={gadgetData.headphones.gadgetImageURL}
-          Alt={gadgetData.headphones.gadgetImageAlt}
-          IsNewLabel={gadgetData.headphones.IsNewGadgetLabel}
-          IsCardEven={gadgetData.headphones.IsEvenCard}
-        />
-      </SectionGadget>
+      <GadgetContainer>
+        {gadgetData.headphones.map((card) => (
+          <GadgetSection>
+            <GadgetCard
+              GadgetName={card.gadgetName}
+              GadgetDetails={card.gadgetDetails}
+              Src={card.gadgetImageURL}
+              Alt={card.gadgetImageAlt}
+              IsNewLabel={card.IsNewGadgetLabel}
+              IsCardEven={card.IsEvenCard}
+            />
+          </GadgetSection>
+        ))}
+      </GadgetContainer>
     </>
   );
 };
