@@ -1,12 +1,12 @@
-import { CategoryHero } from "../../sections/category-hero/CategoryHero";
-import gadgetData from "../../data/gadget.json";
 import { GadgetCard } from "../../components/card/GadgetCard";
+import { CategoryHero } from "../../sections/category-hero/CategoryHero";
+import { CategoryFoot } from "../../sections/category-foot/CategoryFoot";
 import { styled } from "@stitches/react";
+import gadgetData from "../../data/gadget.json";
 
 const GadgetContainer = styled("main", {
   width: "100%",
   height: "100%",
-  padding: "0 100px",
 });
 
 const GadgetSection = styled("section", {
@@ -39,6 +39,7 @@ export const CategoryHeadphones = () => {
             />
           </GadgetSection>
         ))}
+        <CategoryFoot />
       </GadgetContainer>
     </>
   );
