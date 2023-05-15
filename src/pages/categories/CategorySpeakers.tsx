@@ -17,16 +17,17 @@ const GadgetSection = styled("section", {
   alignItems: "center",
 });
 
-export const CategoryHeadphones = () => {
+export const CategorySpeakers = () => {
   return (
     <>
       <CategoryHero
-        title={gadgetData.headphones[0].gadgetName.slice(
-          gadgetData.headphones[0].gadgetName.lastIndexOf(" ")
+        title={gadgetData.speakers[0].gadgetName.slice(
+          gadgetData.speakers[0].gadgetName.lastIndexOf(" ")
         )}
       />
+
       <GadgetContainer>
-        {gadgetData.headphones.map((card) => (
+        {gadgetData.speakers.map((card) => (
           <GadgetSection>
             <GadgetCard
               GadgetName={card.gadgetName}

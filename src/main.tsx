@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page.tsx";
 import App from "./App.tsx";
 import { CategoryHeadphones } from "./pages/categories/CategoryHeadphones.tsx";
+import { CategorySpeakers } from "./pages/categories/CategorySpeakers.tsx";
+import productData from "./data/product.json";
 
 const router = createBrowserRouter([
   {
@@ -12,8 +14,12 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/category-Y-headphones",
+    path: `${productData[0].productURL}`,
     element: <CategoryHeadphones />,
+  },
+  {
+    path: `${productData[2].productURL}`,
+    element: <CategorySpeakers />,
   },
 ]);
 

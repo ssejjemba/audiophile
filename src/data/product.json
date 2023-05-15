@@ -2,12 +2,12 @@
   {
     "productName": "YX1 EARPHONES",
     "productThumbnail": "home/desktop/image-earphones-yx1.jpg",
-    "productURL": "category-Y-headphones"
+    "productURL": "/category-Y-headphones"
   },
   {
     "productName": "ZX7 SPEAKER",
     "productThumbnail": "/local/desktop/zx7-speaker-bg.png",
-    "productURL": "category-7-speakers"
+    "productURL": "/category-7-speakers"
   },
   {
     "productName": "ZX9 SPEAKER",
@@ -15,7 +15,7 @@
     "productSrc": "/home/desktop/image-speaker-zx9.png",
     "productAlt": "Zx9-speaker-image",
     "productDetails": "Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound",
-    "productURL": "category-9-speakers",
+    "productURL": "/category-9-speakers",
     "background": "/home/desktop/pattern-circles.svg"
   }
 ]
