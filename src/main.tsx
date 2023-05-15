@@ -5,6 +5,7 @@ import ErrorPage from "./error-page.tsx";
 import App from "./App.tsx";
 import { CategoryHeadphones } from "./pages/categories/CategoryHeadphones.tsx";
 import { CategorySpeakers } from "./pages/categories/CategorySpeakers.tsx";
+import { CategoryEarphones } from "./pages/categories/CategoryEarphones.tsx";
 import productData from "./data/product.json";
 
 const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   },
   {
     path: `${productData[0].productURL}`,
+    element: <CategoryEarphones />,
+  },
+  {
+    path: `${productData[1].productURL}`,
     element: <CategoryHeadphones />,
   },
   {
