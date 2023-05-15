@@ -1,5 +1,4 @@
 import { styled } from "@stitches/react";
-import { NavigationBar } from "../navigation/NavigationBar";
 import { FootNavigation } from "../navigation/FootNavigation";
 
 const FooterSection = styled("footer", {
