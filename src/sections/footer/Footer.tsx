@@ -1,6 +1,6 @@
 import { styled } from "@stitches/react";
 import { NavigationBar } from "../navigation/NavigationBar";
-// import { FootNavigation } from "../navigation/FootNavigation";
+import { FootNavigation } from "../navigation/FootNavigation";
 
 const FooterSection = styled("footer", {
   height: "50vh",
@@ -54,7 +54,7 @@ const FooterSocialLinks = styled("div", {
 export const Footer = () => {
   return (
     <FooterSection>
-      <NavigationBar hasBorder={false} hasCart={false} />
+      <FootNavigation />
       <FooterContainer>
         <FooterInfo>
           <FootText>
