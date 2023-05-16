@@ -59,7 +59,7 @@ export const NavigationBar = () => {
 
       <LinksList>
         <LinkContainer>
-          <Link href="#">Home</Link>
+          <Link href="/">Home</Link>
         </LinkContainer>
         <LinkContainer>
           <Link href={productData[1].productURL}>HEADPHONES</Link>

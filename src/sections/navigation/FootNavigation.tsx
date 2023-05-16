@@ -1,5 +1,5 @@
 import { styled } from "@stitches/react";
-
+import productData from "../../data/product.json";
 const Nav = styled("nav", {
   display: "flex",
   flexDirection: "row",
@@ -57,16 +57,16 @@ export const FootNavigation = () => {
 
       <LinksList>
         <LinkContainer>
-          <Link href="#">Home</Link>
+          <Link href="/">Home</Link>
         </LinkContainer>
         <LinkContainer>
-          <Link href="#">HEADPHONES</Link>
+          <Link href={productData[1].productURL}>HEADPHONES</Link>
         </LinkContainer>
         <LinkContainer>
-          <Link href="#">SPEAKERS</Link>
+          <Link href={productData[2].productURL}>SPEAKERS</Link>
         </LinkContainer>
         <LinkContainer>
-          <Link href="#">EARPHONES</Link>
+          <Link href={productData[0].productURL}>EARPHONES</Link>
         </LinkContainer>
       </LinksList>
     </Nav>
