@@ -8,6 +8,8 @@ export type GadgetCardProps = {
   GadgetDetails: string | undefined;
   IsNewLabel: boolean | undefined;
   IsCardEven: boolean | undefined;
+  hasSpec: boolean;
+  GadgetPrice?: string | undefined;
   Src: string | undefined;
   Alt: string | undefined;
 };
@@ -70,6 +72,17 @@ const GadgetCardDetails = styled("p", {
   marginBottom: "40px",
 });
 
+const PriceSpan = styled("span", {
+  fontStyle: "normal",
+  fontWeight: "700",
+  fontSize: "18px",
+  lineHeight: "25px",
+  letterSpacing: "1.3px",
+  textTransform: "uppercase",
+  color: "$black",
+  marginBottom: "47px",
+});
+
 export const GadgetCard = (props: GadgetCardProps) => {
   return (
     <GadgetCardContainer
@@ -99,6 +112,7 @@ export const GadgetCard = (props: GadgetCardProps) => {
           {props.IsCardEven ? <NewGadgetLabel>NEW PRODUCT</NewGadgetLabel> : ""}
           <GadgetCardName>{props.GadgetName}</GadgetCardName>
           <GadgetCardDetails>{props.GadgetDetails}</GadgetCardDetails>
+          {props.hasSpec ? <PriceSpan>{props.GadgetPrice}</PriceSpan> : ""}
           <FilledButton text="See Product" />
         </GadgetCardDetailsBox>
       </GadgetCardDescription>

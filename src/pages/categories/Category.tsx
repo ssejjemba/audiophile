@@ -31,6 +31,7 @@ export const CategoryEarphones = () => {
               Alt={card.gadgetImageAlt}
               IsNewLabel={card.IsNewGadgetLabel}
               IsCardEven={card.IsEvenCard}
+              hasSpec={false}
             />
           </GadgetSection>
         ))}
@@ -54,6 +55,7 @@ export const CategoryHeadphones = () => {
               Alt={card.gadgetImageAlt}
               IsNewLabel={card.IsNewGadgetLabel}
               IsCardEven={card.IsEvenCard}
+              hasSpec={false}
             />
           </GadgetSection>
         ))}
@@ -78,6 +80,7 @@ export const CategorySpeakers = () => {
               Alt={card.gadgetImageAlt}
               IsNewLabel={card.IsNewGadgetLabel}
               IsCardEven={card.IsEvenCard}
+              hasSpec={false}
             />
           </GadgetSection>
         ))}

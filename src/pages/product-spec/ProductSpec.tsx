@@ -41,6 +41,8 @@ export const MarkIIHeadphonesSpecs = () => {
             Alt={gadgetData[0].headphones?.[0].gadgetImageAlt}
             IsNewLabel={gadgetData[0].headphones?.[0].IsNewGadgetLabel}
             IsCardEven={gadgetData[0].headphones?.[0].IsEvenCard}
+            GadgetPrice={gadgetData[0].headphones?.[0].gadgetPrice}
+            hasSpec
           />
         </GadgetSection>
       </SpecsMainContainer>
