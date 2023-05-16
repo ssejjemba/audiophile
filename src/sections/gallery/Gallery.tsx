@@ -3,7 +3,7 @@ import { styled } from "@stitches/react";
 const GallerySection = styled("section", {
   width: "100%",
   height: "100%",
-  paddingLeft: "100px",
+  paddingBottom: "50px",
 });
 
 const GalleryElementContainer = styled("div", {

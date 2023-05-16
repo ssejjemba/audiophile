@@ -5,6 +5,7 @@ import { GadgetCard } from "../../components/card/GadgetCard";
 import gadgetData from "../../data/gadget.json";
 import { Feature } from "../../sections/feature/Feature";
 import { Gallery } from "../../sections/gallery/Gallery";
+import { RelatedProducts } from "../../sections/related-products/RelatedProducts";
 
 const NavWrapper = styled("header", {
   background: "$secondary",
@@ -49,6 +50,7 @@ export const MarkIIHeadphonesSpecs = () => {
         </GadgetSection>
         <Feature />
         <Gallery />
+        <RelatedProducts />
       </SpecsMainContainer>
     </>
   );
