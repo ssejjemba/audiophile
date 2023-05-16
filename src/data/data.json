@@ -26,6 +26,23 @@
             "ImageUrl": "/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg",
             "ImageAlt": "main gallery image"
           }
+        },
+        "otherRelatedProduct": {
+          "product1": {
+            "productName": "XX99 MARK I",
+            "productImgURL": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX99 MARK I Image"
+          },
+          "product2": {
+            "productName": "XX59",
+            "productImgURL": "/product-xx59-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX59 Image"
+          },
+          "product3": {
+            "productName": "ZX9 SPEAKER",
+            "productImgURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "ZX9 SPEAKER Image"
+          }
         }
       },
       "markIheadphones": {
@@ -51,6 +68,23 @@
           "mainImg": {
             "ImageUrl": "/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg",
             "ImageAlt": "main gallery image"
+          }
+        },
+        "otherRelatedProduct": {
+          "product1": {
+            "productName": "XX99 MARK I",
+            "productImgURL": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX99 MARK I Image"
+          },
+          "product2": {
+            "productName": "XX59",
+            "productImgURL": "/product-xx59-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX59 Image"
+          },
+          "product3": {
+            "productName": "ZX9 SPEAKER",
+            "productImgURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "ZX9 SPEAKER Image"
           }
         }
       },
@@ -78,6 +112,23 @@
           "mainImg": {
             "ImageUrl": "/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg",
             "ImageAlt": "main gallery image"
+          }
+        },
+        "otherRelatedProduct": {
+          "product1": {
+            "productName": "XX99 MARK I",
+            "productImgURL": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX99 MARK I Image"
+          },
+          "product2": {
+            "productName": "XX59",
+            "productImgURL": "/product-xx59-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX59 Image"
+          },
+          "product3": {
+            "productName": "ZX9 SPEAKER",
+            "productImgURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "ZX9 SPEAKER Image"
           }
         }
       }
@@ -111,6 +162,23 @@
             "ImageUrl": "/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg",
             "ImageAlt": "main gallery image"
           }
+        },
+        "otherRelatedProduct": {
+          "product1": {
+            "productName": "XX99 MARK I",
+            "productImgURL": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX99 MARK I Image"
+          },
+          "product2": {
+            "productName": "XX59",
+            "productImgURL": "/product-xx59-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX59 Image"
+          },
+          "product3": {
+            "productName": "ZX9 SPEAKER",
+            "productImgURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "ZX9 SPEAKER Image"
+          }
         }
       },
       "ZX7Speakers": {
@@ -136,6 +204,23 @@
           "mainImg": {
             "ImageUrl": "/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg",
             "ImageAlt": "main gallery image"
+          }
+        },
+        "otherRelatedProduct": {
+          "product1": {
+            "productName": "XX99 MARK I",
+            "productImgURL": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX99 MARK I Image"
+          },
+          "product2": {
+            "productName": "XX59",
+            "productImgURL": "/product-xx59-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX59 Image"
+          },
+          "product3": {
+            "productName": "ZX9 SPEAKER",
+            "productImgURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "ZX9 SPEAKER Image"
           }
         }
       }
@@ -168,6 +253,23 @@
           "mainImg": {
             "ImageUrl": "/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg",
             "ImageAlt": "main gallery image"
+          }
+        },
+        "otherRelatedProduct": {
+          "product1": {
+            "productName": "XX99 MARK I",
+            "productImgURL": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX99 MARK I Image"
+          },
+          "product2": {
+            "productName": "XX59",
+            "productImgURL": "/product-xx59-headphones/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "XX59 Image"
+          },
+          "product3": {
+            "productName": "ZX9 SPEAKER",
+            "productImgURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
+            "productImgAlt": "ZX9 SPEAKER Image"
           }
         }
       }

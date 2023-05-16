@@ -2,10 +2,10 @@ import { NavigationBar } from "../../sections/navigation/NavigationBar";
 import { ReturnButton } from "../../components/buttons/ReturnButton";
 import { styled } from "@stitches/react";
 import { GadgetCard } from "../../components/card/GadgetCard";
+import { OtherProductCard } from "../../components/card/OtherProductsCard";
 import gadgetData from "../../data/data.json";
 import { Feature } from "../../sections/feature/Feature";
 import { Gallery } from "../../sections/gallery/Gallery";
-import { RelatedProducts } from "../../sections/related-products/RelatedProducts";
 
 const NavWrapper = styled("header", {
   background: "$secondary",
@@ -26,6 +26,27 @@ const GadgetSection = styled("section", {
   height: "100vh",
   display: "flex",
   alignItems: "center",
+});
+
+const RelatedProductsSection = styled("section", {
+  width: "100%",
+  height: "100vh",
+
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "64px",
+});
+
+const RelatedProductHeading = styled("h3", {
+  color: "$black",
+});
+
+const RelatedProductsCardContainer = styled("div", {
+  width: "100%",
+  display: "flex",
+  justifyContent: "space-evenly",
 });
 
 export const MarkIIHeadphonesSpecs = () => {
@@ -107,7 +128,21 @@ export const MarkIIHeadphonesSpecs = () => {
               .gadgetGallery.mainImg.ImageUrl
           }
         />
-        <RelatedProducts />
+        <RelatedProductsSection>
+          <RelatedProductHeading>you may also like</RelatedProductHeading>
+          <RelatedProductsCardContainer>
+            {Object.values(
+              gadgetData.headphonesCategory.headphones.markIIheadphones
+                .otherRelatedProduct
+            ).map((cardData) => (
+              <OtherProductCard
+                productName={cardData.productName}
+                productImgURL={cardData.productImgURL}
+                productImgAlt={cardData.productImgAlt}
+              />
+            ))}
+          </RelatedProductsCardContainer>
+        </RelatedProductsSection>
       </SpecsMainContainer>
     </>
   );

@@ -6,7 +6,7 @@ import App from "./App.tsx";
 import { CategoryHeadphones } from "./pages/categories/Category.tsx";
 import { CategorySpeakers } from "./pages/categories/Category.tsx";
 import { CategoryEarphones } from "./pages/categories/Category.tsx";
-import { MarkIIHeadphonesSpecs } from "./pages/product-spec/ProductSpec.tsx";
+import { MarkIIHeadphonesSpecs } from "./pages/product-spec/MarkIIProductSpecs.tsx";
 import productData from "./data/product.json";
 import gadgetData from "./data/data.json";
 import { globalCss } from "../stitches.config.ts";
