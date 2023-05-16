@@ -3,6 +3,7 @@ import { ReturnButton } from "../../components/buttons/ReturnButton";
 import { styled } from "@stitches/react";
 import { GadgetCard } from "../../components/card/GadgetCard";
 import gadgetData from "../../data/gadget.json";
+import { Feature } from "../../sections/feature/Feature";
 
 const NavWrapper = styled("header", {
   background: "$secondary",
@@ -45,6 +46,7 @@ export const MarkIIHeadphonesSpecs = () => {
             hasSpec
           />
         </GadgetSection>
+        <Feature />
       </SpecsMainContainer>
     </>
   );
