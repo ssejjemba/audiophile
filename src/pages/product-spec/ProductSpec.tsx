@@ -38,38 +38,73 @@ export const MarkIIHeadphonesSpecs = () => {
         <ReturnButton text="Go Back" />
         <GadgetSection>
           <GadgetCard
-            GadgetName={gadgetData[0].headphones?.[0].gadgetName}
-            GadgetDetails={gadgetData[0].headphones?.[0].gadgetDetails}
-            Src={gadgetData[0].headphones?.[0].gadgetImageURL}
-            Alt={gadgetData[0].headphones?.[0].gadgetImageAlt}
-            IsNewLabel={gadgetData[0].headphones?.[0].IsNewGadgetLabel}
-            IsCardEven={gadgetData[0].headphones?.[0].IsEvenCard}
-            GadgetPrice={gadgetData[0].headphones?.[0].gadgetPrice}
+            GadgetName={
+              gadgetData.headphonesCategory.headphones?.markIIheadphones
+                .gadgetName
+            }
+            GadgetDetails={
+              gadgetData.headphonesCategory.headphones?.markIIheadphones
+                .gadgetDetails
+            }
+            Src={
+              gadgetData.headphonesCategory.headphones?.markIIheadphones
+                .gadgetImageURL
+            }
+            Alt={
+              gadgetData.headphonesCategory.headphones?.markIIheadphones
+                .gadgetImageAlt
+            }
+            IsNewLabel={
+              gadgetData.headphonesCategory.headphones?.markIIheadphones
+                .IsNewGadgetLabel
+            }
+            IsCardEven={
+              gadgetData.headphonesCategory.headphones?.markIIheadphones
+                .IsEvenCard
+            }
+            GadgetPrice={
+              gadgetData.headphonesCategory.headphones?.markIIheadphones
+                .gadgetPrice
+            }
             hasSpec
           />
         </GadgetSection>
         <Feature
-          paragraph1={gadgetData[0].headphones?.[0]["feature-para-1"]}
-          paragraph2={gadgetData[0].headphones?.[0]["feature-para-2"]}
+          paragraph1={
+            gadgetData.headphonesCategory.headphones?.markIIheadphones[
+              "feature-para-1"
+            ]
+          }
+          paragraph2={
+            gadgetData.headphonesCategory.headphones?.markIIheadphones[
+              "feature-para-2"
+            ]
+          }
         />
         <Gallery
           sideTopURL={
-            gadgetData[0].headphones?.[0].gadgetGallery.sideTopImg.ImageUrl
+            gadgetData.headphonesCategory.headphones?.markIIheadphones
+              .gadgetGallery.sideTopImg.ImageUrl
           }
           sideTopAlt={
-            gadgetData[0].headphones?.[0].gadgetGallery.sideTopImg.ImageAlt
+            gadgetData.headphonesCategory.headphones?.markIIheadphones
+              .gadgetGallery.sideTopImg.ImageAlt
           }
           sideBottomURL={
-            gadgetData[0].headphones?.[0].gadgetGallery.sideBottomImg.ImageUrl
+            gadgetData.headphonesCategory.headphones?.markIIheadphones
+              .gadgetGallery.sideBottomImg.ImageUrl
           }
           sideBottomAlt={
-            gadgetData[0].headphones?.[0].gadgetGallery.sideBottomImg.ImageUrl
+            gadgetData.headphonesCategory.headphones?.markIIheadphones
+              .gadgetGallery.sideBottomImg.ImageUrl
           }
           mainStreamURL={
-            gadgetData[0].headphones?.[0].gadgetGallery.mainImg.ImageUrl
+            gadgetData.headphonesCategory.headphones?.markIIheadphones
+              .gadgetGallery.mainImg.ImageUrl
           }
           mainStreamAlt={
-            gadgetData[0].headphones?.[0].gadgetGallery.mainImg.ImageUrl
+            gadgetData.headphonesCategory.headphones?.markIIheadphones
+              .gadgetGallery.mainImg.ImageUrl
           }
         />
         <RelatedProducts />

@@ -6,14 +6,14 @@ import { CartButton } from "../buttons/CartButton";
 import { StateButton } from "../buttons/StateButton";
 
 export type GadgetCardProps = {
-  GadgetName: string | undefined;
-  GadgetDetails: string | undefined;
-  IsNewLabel: boolean | undefined;
-  IsCardEven: boolean | undefined;
+  GadgetName: string;
+  GadgetDetails: string;
+  IsNewLabel: boolean;
+  IsCardEven: boolean;
   hasSpec: boolean;
-  GadgetPrice?: string | undefined;
-  Src: string | undefined;
-  Alt: string | undefined;
+  GadgetPrice?: string;
+  Src: string;
+  Alt: string;
 };
 const GadgetCardContainer = styled("div", {
   width: "100%",

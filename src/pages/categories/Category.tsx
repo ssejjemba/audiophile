@@ -20,9 +20,9 @@ const GadgetSection = styled("section", {
 export const CategoryEarphones = () => {
   return (
     <>
-      <CategoryHero title={gadgetData[2].productTitle} />
+      <CategoryHero title={gadgetData.earphonesCategory.productTitle} />
       <GadgetContainer>
-        {gadgetData[2]?.earphones?.map((card) => (
+        {Object.values(gadgetData.earphonesCategory.earphones).map((card) => (
           <GadgetSection>
             <GadgetCard
               GadgetName={card.gadgetName}
@@ -44,9 +44,9 @@ export const CategoryEarphones = () => {
 export const CategoryHeadphones = () => {
   return (
     <>
-      <CategoryHero title={gadgetData[0].productTitle} />
+      <CategoryHero title={gadgetData.headphonesCategory.productTitle} />
       <GadgetContainer>
-        {gadgetData[0]?.headphones?.map((card) => (
+        {Object.values(gadgetData.headphonesCategory.headphones).map((card) => (
           <GadgetSection>
             <GadgetCard
               GadgetName={card.gadgetName}
@@ -68,10 +68,10 @@ export const CategoryHeadphones = () => {
 export const CategorySpeakers = () => {
   return (
     <>
-      <CategoryHero title={gadgetData[1].productTitle} />
+      <CategoryHero title={gadgetData.speakersCategory.productTitle} />
 
       <GadgetContainer>
-        {gadgetData[1]?.speakers?.map((card) => (
+        {Object.values(gadgetData.speakersCategory.speakers).map((card) => (
           <GadgetSection>
             <GadgetCard
               GadgetName={card.gadgetName}

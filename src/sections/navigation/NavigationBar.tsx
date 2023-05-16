@@ -71,13 +71,13 @@ export const NavigationBar = ({ hasBorder }: NavProps) => {
           <Link href="/">Home</Link>
         </LinkContainer>
         <LinkContainer>
-          <Link href={productData[1].productURL}>HEADPHONES</Link>
+          <Link href={productData.speakers7.productURL}>HEADPHONES</Link>
         </LinkContainer>
         <LinkContainer>
-          <Link href={productData[2].productURL}>SPEAKERS</Link>
+          <Link href={productData.speakers9.productURL}>SPEAKERS</Link>
         </LinkContainer>
         <LinkContainer>
-          <Link href={productData[0].productURL}>EARPHONES</Link>
+          <Link href={productData.earphonesY.productURL}>EARPHONES</Link>
         </LinkContainer>
       </LinksList>
 

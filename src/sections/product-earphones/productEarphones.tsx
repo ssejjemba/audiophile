@@ -15,9 +15,9 @@ export const ProductEarphones = () => {
   return (
     <EarphonesSection>
       <ProductExpo
-        ProductName={productData[0].productName}
-        ProductThumbnail={productData[0].productThumbnail}
-        ProductURL={productData[0].productURL}
+        ProductName={productData.earphonesY.productName}
+        ProductThumbnail={productData.earphonesY.productThumbnail}
+        ProductURL={productData.earphonesY.productURL}
         ButtonTheme="light"
         gutterX="30px"
         backColor="hsl(0, 0%, 95%)"

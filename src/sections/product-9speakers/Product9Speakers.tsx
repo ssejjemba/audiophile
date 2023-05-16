@@ -15,12 +15,12 @@ export const Product9Speakers = () => {
   return (
     <Zx9SpeakerSection>
       <ProductExpo
-        ProductName={productData[2].productName}
-        ProductURL={productData[2].productURL}
-        ProductThumbnail={productData[2].productThumbnail}
-        ProductSrc={productData[2].productSrc}
-        ProductAlt={productData[2].productAlt}
-        ProductDetails={productData[2].productDetails}
+        ProductName={productData.speakers9.productName}
+        ProductURL={productData.speakers9.productURL}
+        ProductThumbnail={productData.speakers9.productThumbnail}
+        ProductSrc={productData.speakers9.productSrc}
+        ProductAlt={productData.speakers9.productAlt}
+        ProductDetails={productData.speakers9.productDetails}
         ButtonTheme="dark"
         height="500px"
         padX="50px 95px 0"
@@ -28,7 +28,7 @@ export const Product9Speakers = () => {
         display="flex"
         objCenter="center"
         objEnd="flex-end"
-        background={`hsl(22, 65%, 57%) url(${productData[2].background})`}
+        background={`hsl(22, 65%, 57%) url(${productData.speakers9.background})`}
       />
     </Zx9SpeakerSection>
   );

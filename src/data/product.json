@@ -1,15 +1,15 @@
-[
-  {
+{
+  "earphonesY": {
     "productName": "YX1 EARPHONES",
     "productThumbnail": "home/desktop/image-earphones-yx1.jpg",
     "productURL": "/category-earphones"
   },
-  {
+  "speakers7": {
     "productName": "ZX7 SPEAKER",
     "productThumbnail": "/local/desktop/zx7-speaker-bg.png",
     "productURL": "/category-headphones"
   },
-  {
+  "speakers9": {
     "productName": "ZX9 SPEAKER",
     "productThumbnail": "",
     "productSrc": "/home/desktop/image-speaker-zx9.png",
@@ -18,4 +18,4 @@
     "productURL": "/category-speakers",
     "background": "/home/desktop/pattern-circles.svg"
   }
-]
+}

@@ -63,7 +63,9 @@ export const Hero = () => {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </Description>
-          <Link to={`${gadgetData[0].headphones?.[0].gadgetPageURL}`}>
+          <Link
+            to={`${gadgetData.headphonesCategory.headphones.markIIheadphones.gadgetPageURL}`}
+          >
             <FilledButton text="See Product" />
           </Link>
         </HeroContent>

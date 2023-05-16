@@ -14,9 +14,9 @@ export const Product7Speakers = () => {
   return (
     <Speaker7Section>
       <ProductExpo
-        ProductName={productData[1].productName}
-        background={`url(${productData[1].productThumbnail})`}
-        ProductURL={productData[1].productURL}
+        ProductName={productData.speakers7.productName}
+        background={`url(${productData.speakers7.productThumbnail})`}
+        ProductURL={productData.speakers7.productURL}
         ButtonTheme="light"
         padX="0 95px 0"
         flexAlign="flex-start"

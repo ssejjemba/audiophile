@@ -1,8 +1,8 @@
-[
-  {
+{
+  "headphonesCategory": {
     "productTitle": "headphones",
-    "headphones": [
-      {
+    "headphones": {
+      "markIIheadphones": {
         "gadgetName": "XX99 Mark II Headphones",
         "IsNewGadgetLabel": true,
         "IsEvenCard": true,
@@ -28,7 +28,7 @@
           }
         }
       },
-      {
+      "markIheadphones": {
         "gadgetName": "XX99 Mark I Headphones",
         "IsNewGadgetLabel": false,
         "IsEvenCard": false,
@@ -55,7 +55,7 @@
         }
       },
 
-      {
+      "XX59headphones": {
         "gadgetName": "XX59 Headphones",
         "IsNewGadgetLabel": false,
         "IsEvenCard": true,
@@ -81,13 +81,13 @@
           }
         }
       }
-    ]
+    }
   },
 
-  {
+  "speakersCategory": {
     "productTitle": "Speakers",
-    "speakers": [
-      {
+    "speakers": {
+      "ZX9Speakers": {
         "gadgetName": "ZX9 SPEAKER",
         "IsNewGadgetLabel": true,
         "IsEvenCard": true,
@@ -113,7 +113,7 @@
           }
         }
       },
-      {
+      "ZX7Speakers": {
         "gadgetName": "ZX7 SPEAKER",
         "IsNewGadgetLabel": false,
         "IsEvenCard": false,
@@ -139,13 +139,13 @@
           }
         }
       }
-    ]
+    }
   },
 
-  {
+  "earphonesCategory": {
     "productTitle": "Earphones",
-    "earphones": [
-      {
+    "earphones": {
+      "YX1Earphones": {
         "gadgetName": "YX1 WIRELESS EARPHONES",
         "IsNewGadgetLabel": true,
         "IsEvenCard": true,
@@ -171,6 +171,6 @@
           }
         }
       }
-    ]
+    }
   }
-]
+}

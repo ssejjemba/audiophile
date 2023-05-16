@@ -1,8 +1,8 @@
 import { styled } from "@stitches/react";
 
 type FeatureElementProps = {
-  paragraph1: string | undefined;
-  paragraph2: string | undefined;
+  paragraph1: string;
+  paragraph2: string;
 };
 
 const FeatureSection = styled("section", {

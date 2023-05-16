@@ -1,12 +1,12 @@
 import { styled } from "@stitches/react";
 
 type GalleryProps = {
-  sideTopURL: string | undefined;
-  sideTopAlt: string | undefined;
-  sideBottomURL: string | undefined;
-  sideBottomAlt: string | undefined;
-  mainStreamURL: string | undefined;
-  mainStreamAlt: string | undefined;
+  sideTopURL: string;
+  sideTopAlt: string;
+  sideBottomURL: string;
+  sideBottomAlt: string;
+  mainStreamURL: string;
+  mainStreamAlt: string;
 };
 
 const GallerySection = styled("section", {

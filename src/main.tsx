@@ -20,20 +20,20 @@ const router = createBrowserRouter([
   },
   // Navigation Routes
   {
-    path: `${productData[0].productURL}`,
+    path: `${productData.speakers9.productURL}`,
     element: <CategoryEarphones />,
   },
   {
-    path: `${productData[1].productURL}`,
+    path: `${productData.speakers7.productURL}`,
     element: <CategoryHeadphones />,
   },
   {
-    path: `${productData[2].productURL}`,
+    path: `${productData.earphonesY.productURL}`,
     element: <CategorySpeakers />,
   },
   // Product Spec Routes
   {
-    path: `${gadgetData[0].headphones?.[0].gadgetPageURL}`,
+    path: `${gadgetData.headphonesCategory.headphones.markIIheadphones.gadgetPageURL}`,
     element: <MarkIIHeadphonesSpecs />,
   },
 ]);
