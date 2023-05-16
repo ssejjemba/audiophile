@@ -8,6 +8,7 @@ type FeatureElementProps = {
 const FeatureSection = styled("section", {
   width: "100%",
   height: "100vh",
+  padding: "0 100px",
   display: "flex",
   alignItems: "center",
 });

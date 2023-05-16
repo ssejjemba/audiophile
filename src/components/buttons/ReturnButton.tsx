@@ -1,4 +1,5 @@
 import { styled } from "@stitches/react";
+import { Link } from "react-router-dom";
 
 type ReturnBtnProps = {
   text: string;
@@ -18,8 +19,13 @@ const ReturnBtn = styled("button", {
   mixBlendMode: "normal",
   opacity: "0.5",
   marginTop: "79px",
+  marginLeft: "100px",
 });
 
 export const ReturnButton = ({ text }: ReturnBtnProps) => {
-  return <ReturnBtn>{text}</ReturnBtn>;
+  return (
+    <Link to={`/`}>
+      <ReturnBtn>{text}</ReturnBtn>
+    </Link>
+  );
 };

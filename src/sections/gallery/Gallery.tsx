@@ -12,6 +12,7 @@ type GalleryProps = {
 const GallerySection = styled("section", {
   width: "100%",
   height: "100%",
+  padding: "0 100px",
   paddingBottom: "50px",
 });
 

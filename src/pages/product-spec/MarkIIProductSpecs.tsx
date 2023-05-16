@@ -6,6 +6,7 @@ import { OtherProductCard } from "../../components/card/OtherProductsCard";
 import gadgetData from "../../data/data.json";
 import { Feature } from "../../sections/feature/Feature";
 import { Gallery } from "../../sections/gallery/Gallery";
+import { CategoryFoot } from "../../sections/category-foot/CategoryFoot";
 
 const NavWrapper = styled("header", {
   background: "$secondary",
@@ -17,13 +18,13 @@ const NavWrapper = styled("header", {
 const SpecsMainContainer = styled("main", {
   width: "100%",
   height: "auto",
-  padding: "0 100px",
   background: "$gray500",
 });
 
 const GadgetSection = styled("section", {
   width: "100%",
   height: "100vh",
+  padding: "0 100px",
   display: "flex",
   alignItems: "center",
 });
@@ -31,6 +32,7 @@ const GadgetSection = styled("section", {
 const RelatedProductsSection = styled("section", {
   width: "100%",
   height: "100vh",
+  padding: "0 100px",
 
   display: "flex",
   flexDirection: "column",
@@ -143,6 +145,7 @@ export const MarkIIHeadphonesSpecs = () => {
             ))}
           </RelatedProductsCardContainer>
         </RelatedProductsSection>
+        <CategoryFoot />
       </SpecsMainContainer>
     </>
   );
