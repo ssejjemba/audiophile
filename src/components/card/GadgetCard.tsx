@@ -4,12 +4,12 @@ import { styled } from "@stitches/react";
 import { FilledButton } from "../buttons/FilledButton";
 
 export type GadgetCardProps = {
-  GadgetName: string;
-  GadgetDetails: string;
-  IsNewLabel: boolean;
-  IsCardEven: boolean;
-  Src: string;
-  Alt: string;
+  GadgetName: string | undefined;
+  GadgetDetails: string | undefined;
+  IsNewLabel: boolean | undefined;
+  IsCardEven: boolean | undefined;
+  Src: string | undefined;
+  Alt: string | undefined;
 };
 const GadgetCardContainer = styled("div", {
   width: "100%",

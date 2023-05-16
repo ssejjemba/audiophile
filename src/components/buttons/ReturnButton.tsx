@@ -7,7 +7,6 @@ type ReturnBtnProps = {
 const ReturnBtn = styled("button", {
   outline: "none",
   border: "none",
-  margin: "0",
   cursor: "pointer",
   padding: "12px 14px",
   fontSize: "15px",
@@ -18,6 +17,7 @@ const ReturnBtn = styled("button", {
   color: "$black",
   mixBlendMode: "normal",
   opacity: "0.5",
+  marginTop: "79px",
 });
 
 export const ReturnButton = ({ text }: ReturnBtnProps) => {
