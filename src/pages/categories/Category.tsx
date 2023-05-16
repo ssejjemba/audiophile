@@ -2,7 +2,7 @@ import { GadgetCard } from "../../components/card/GadgetCard";
 import { CategoryHero } from "../../sections/category-hero/CategoryHero";
 import { CategoryFoot } from "../../sections/category-foot/CategoryFoot";
 import { styled } from "@stitches/react";
-import gadgetData from "../../data/gadget.json";
+import gadgetData from "../../data/data.json";
 
 const GadgetContainer = styled("main", {
   width: "100%",

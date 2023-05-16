@@ -1,7 +1,7 @@
 import { styled } from "@stitches/react";
 import { FilledButton } from "../../components/buttons/FilledButton";
 import { Link } from "react-router-dom";
-import gadgetData from "../../data/gadget.json";
+import gadgetData from "../../data/data.json";
 
 const HeroContainer = styled("div", {
   display: "flex",

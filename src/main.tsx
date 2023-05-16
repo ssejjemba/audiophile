@@ -8,7 +8,7 @@ import { CategorySpeakers } from "./pages/categories/Category.tsx";
 import { CategoryEarphones } from "./pages/categories/Category.tsx";
 import { MarkIIHeadphonesSpecs } from "./pages/product-spec/ProductSpec.tsx";
 import productData from "./data/product.json";
-import gadgetData from "./data/gadget.json";
+import gadgetData from "./data/data.json";
 import { globalCss } from "../stitches.config.ts";
 
 const router = createBrowserRouter([

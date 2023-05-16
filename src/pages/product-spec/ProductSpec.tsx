@@ -2,7 +2,7 @@ import { NavigationBar } from "../../sections/navigation/NavigationBar";
 import { ReturnButton } from "../../components/buttons/ReturnButton";
 import { styled } from "@stitches/react";
 import { GadgetCard } from "../../components/card/GadgetCard";
-import gadgetData from "../../data/gadget.json";
+import gadgetData from "../../data/data.json";
 import { Feature } from "../../sections/feature/Feature";
 import { Gallery } from "../../sections/gallery/Gallery";
 import { RelatedProducts } from "../../sections/related-products/RelatedProducts";
