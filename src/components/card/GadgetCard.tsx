@@ -2,6 +2,8 @@
 
 import { styled } from "@stitches/react";
 import { FilledButton } from "../buttons/FilledButton";
+import { CartButton } from "../buttons/CartButton";
+import { StateButton } from "../buttons/StateButton";
 
 export type GadgetCardProps = {
   GadgetName: string | undefined;
@@ -83,6 +85,11 @@ const PriceSpan = styled("span", {
   marginBottom: "47px",
 });
 
+const SecondaryButtonContainer = styled("div", {
+  display: "flex",
+  gap: "16px",
+});
+
 export const GadgetCard = (props: GadgetCardProps) => {
   return (
     <GadgetCardContainer
@@ -113,7 +120,14 @@ export const GadgetCard = (props: GadgetCardProps) => {
           <GadgetCardName>{props.GadgetName}</GadgetCardName>
           <GadgetCardDetails>{props.GadgetDetails}</GadgetCardDetails>
           {props.hasSpec ? <PriceSpan>{props.GadgetPrice}</PriceSpan> : ""}
-          <FilledButton text="See Product" />
+          {props.hasSpec ? (
+            <SecondaryButtonContainer>
+              <CartButton text="Add to Cart" />
+              <StateButton text="1" />
+            </SecondaryButtonContainer>
+          ) : (
+            <FilledButton text="See Product" />
+          )}
         </GadgetCardDetailsBox>
       </GadgetCardDescription>
     </GadgetCardContainer>
