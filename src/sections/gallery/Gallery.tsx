@@ -1,5 +1,14 @@
 import { styled } from "@stitches/react";
 
+type GalleryProps = {
+  sideTopURL: string | undefined;
+  sideTopAlt: string | undefined;
+  sideBottomURL: string | undefined;
+  sideBottomAlt: string | undefined;
+  mainStreamURL: string | undefined;
+  mainStreamAlt: string | undefined;
+};
+
 const GallerySection = styled("section", {
   width: "100%",
   height: "100%",
@@ -41,24 +50,18 @@ const GalleryImg = styled("img", {
   borderRadius: "8px",
 });
 
-export const Gallery = () => {
+export const Gallery = (props: GalleryProps) => {
   return (
     <GallerySection>
       <GalleryElementContainer>
         <GallerySideTopBox>
-          <GalleryImg src="/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg" />
+          <GalleryImg src={props.sideTopURL} alt={props.sideTopAlt} />
         </GallerySideTopBox>
         <GallerySideBottomBox>
-          <GalleryImg
-            src="/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg"
-            alt="beast gear"
-          />
+          <GalleryImg src={props.sideBottomURL} alt={props.sideBottomAlt} />
         </GallerySideBottomBox>
         <GallerySideMainBox>
-          <GalleryImg
-            src="/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg"
-            alt="beast gear"
-          />
+          <GalleryImg src={props.mainStreamURL} alt={props.mainStreamAlt} />
         </GallerySideMainBox>
       </GalleryElementContainer>
     </GallerySection>

@@ -52,7 +52,26 @@ export const MarkIIHeadphonesSpecs = () => {
           paragraph1={gadgetData[0].headphones?.[0]["feature-para-1"]}
           paragraph2={gadgetData[0].headphones?.[0]["feature-para-2"]}
         />
-        <Gallery />
+        <Gallery
+          sideTopURL={
+            gadgetData[0].headphones?.[0].gadgetGallery.sideTopImg.ImageUrl
+          }
+          sideTopAlt={
+            gadgetData[0].headphones?.[0].gadgetGallery.sideTopImg.ImageAlt
+          }
+          sideBottomURL={
+            gadgetData[0].headphones?.[0].gadgetGallery.sideBottomImg.ImageUrl
+          }
+          sideBottomAlt={
+            gadgetData[0].headphones?.[0].gadgetGallery.sideBottomImg.ImageUrl
+          }
+          mainStreamURL={
+            gadgetData[0].headphones?.[0].gadgetGallery.mainImg.ImageUrl
+          }
+          mainStreamAlt={
+            gadgetData[0].headphones?.[0].gadgetGallery.mainImg.ImageUrl
+          }
+        />
         <RelatedProducts />
       </SpecsMainContainer>
     </>
