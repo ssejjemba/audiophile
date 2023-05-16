@@ -141,6 +141,7 @@ export const MarkIIHeadphonesSpecs = () => {
                 productName={cardData.productName}
                 productImgURL={cardData.productImgURL}
                 productImgAlt={cardData.productImgAlt}
+                key={cardData.productName}
               />
             ))}
           </RelatedProductsCardContainer>

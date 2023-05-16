@@ -124,6 +124,8 @@ export const Root = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <Root />
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
 );
+
+root.render(<Root />);
