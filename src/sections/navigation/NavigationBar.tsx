@@ -1,13 +1,16 @@
 import { styled } from "@stitches/react";
 import productData from "../../data/product.json";
 
+type NavProps = {
+  hasBorder: boolean;
+};
+
 const Nav = styled("nav", {
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "space-between",
   height: "96px",
-  borderBottom: "1px solid $white",
 });
 
 const LinksList = styled("ul", {
@@ -39,9 +42,15 @@ const Link = styled("a", {
   color: "$white",
 });
 
-export const NavigationBar = () => {
+export const NavigationBar = ({ hasBorder }: NavProps) => {
   return (
-    <Nav>
+    <Nav
+      style={
+        hasBorder
+          ? { borderBottom: "1px solid hsl(0, 0%, 100%)" }
+          : { borderBottom: "" }
+      }
+    >
       <svg
         width="143"
         height="25"

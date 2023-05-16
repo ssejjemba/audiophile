@@ -20,7 +20,7 @@ export const MarkIIHeadphonesSpecs = () => {
   return (
     <>
       <NavWrapper>
-        <NavigationBar />
+        <NavigationBar hasBorder={false} />
       </NavWrapper>
       <SpecsMainContainer>
         <ReturnButton text="Go Back" />
