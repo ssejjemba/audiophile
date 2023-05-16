@@ -48,7 +48,10 @@ export const MarkIIHeadphonesSpecs = () => {
             hasSpec
           />
         </GadgetSection>
-        <Feature />
+        <Feature
+          paragraph1={gadgetData[0].headphones?.[0]["feature-para-1"]}
+          paragraph2={gadgetData[0].headphones?.[0]["feature-para-2"]}
+        />
         <Gallery />
         <RelatedProducts />
       </SpecsMainContainer>
