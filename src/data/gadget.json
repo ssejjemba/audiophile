@@ -8,7 +8,8 @@
         "IsEvenCard": true,
         "gadgetImageURL": "/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg",
         "gadgetImageAlt": "XX99 Mark II Headphones Image",
-        "gadgetDetails": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound."
+        "gadgetDetails": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
+        "gadgetPageURL": "/category-headphones/XX99-Mark-II-Headphones"
       },
       {
         "gadgetName": "XX99 Mark I Headphones",
@@ -16,7 +17,8 @@
         "IsEvenCard": false,
         "gadgetImageURL": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
         "gadgetImageAlt": "XX99 Mark I Headphones Image",
-        "gadgetDetails": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go."
+        "gadgetDetails": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
+        "gadgetPageURL": "/category-headphones/XX99-Mark-II-Headphones"
       },
 
       {
@@ -25,7 +27,8 @@
         "IsEvenCard": true,
         "gadgetImageURL": "/product-xx59-headphones/desktop/image-category-page-preview.jpg",
         "gadgetImageAlt": "XX59 Headphones Image",
-        "gadgetDetails": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move."
+        "gadgetDetails": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
+        "gadgetPageURL": "/category-headphones/XX99-Mark-II-Headphones"
       }
     ]
   },
@@ -39,7 +42,8 @@
         "IsEvenCard": true,
         "gadgetImageURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
         "gadgetImageAlt": "ZX9 SPEAKER Image",
-        "gadgetDetails": "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups."
+        "gadgetDetails": "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
+        "gadgetPageURL": "/category-headphones/XX99-Mark-II-Headphones"
       },
       {
         "gadgetName": "ZX7 SPEAKER",
@@ -47,7 +51,8 @@
         "IsEvenCard": false,
         "gadgetImageURL": "/product-zx7-speaker/desktop/image-category-page-preview.jpg",
         "gadgetImageAlt": "ZX7 SPEAKER Image",
-        "gadgetDetails": "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use."
+        "gadgetDetails": "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
+        "gadgetPageURL": "/category-headphones/XX99-Mark-II-Headphones"
       }
     ]
   },
@@ -61,7 +66,8 @@
         "IsEvenCard": true,
         "gadgetImageURL": "/product-yx1-earphones/desktop/image-category-page-preview.jpg",
         "gadgetImageAlt": "YX1 WIRELESS EARPHONES Image",
-        "gadgetDetails": "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."
+        "gadgetDetails": "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
+        "gadgetPageURL": "/category-headphones/XX99-Mark-II-Headphones"
       }
     ]
   }

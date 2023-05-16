@@ -1,5 +1,7 @@
 import { styled } from "@stitches/react";
 import { FilledButton } from "../../components/buttons/FilledButton";
+import { Link } from "react-router-dom";
+import gadgetData from "../../data/gadget.json";
 
 const HeroContainer = styled("div", {
   display: "flex",
@@ -61,7 +63,9 @@ export const Hero = () => {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </Description>
-          <FilledButton text="See Product" />
+          <Link to={`${gadgetData[0].headphones?.[0].gadgetPageURL}`}>
+            <FilledButton text="See Product" />
+          </Link>
         </HeroContent>
       </Aside>
     </HeroContainer>

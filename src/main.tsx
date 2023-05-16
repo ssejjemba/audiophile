@@ -6,15 +6,19 @@ import App from "./App.tsx";
 import { CategoryHeadphones } from "./pages/categories/Category.tsx";
 import { CategorySpeakers } from "./pages/categories/Category.tsx";
 import { CategoryEarphones } from "./pages/categories/Category.tsx";
+import { MarkIIHeadphonesSpecs } from "./pages/product-spec/ProductSpec.tsx";
 import productData from "./data/product.json";
+import gadgetData from "./data/gadget.json";
 import { globalCss } from "../stitches.config.ts";
 
 const router = createBrowserRouter([
+  // Root Home Route
   {
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
   },
+  // Navigation Routes
   {
     path: `${productData[0].productURL}`,
     element: <CategoryEarphones />,
@@ -26,6 +30,11 @@ const router = createBrowserRouter([
   {
     path: `${productData[2].productURL}`,
     element: <CategorySpeakers />,
+  },
+  // Product Spec Routes
+  {
+    path: `${gadgetData[0].headphones?.[0].gadgetPageURL}`,
+    element: <MarkIIHeadphonesSpecs />,
   },
 ]);
 
