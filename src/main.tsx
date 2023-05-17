@@ -36,6 +36,10 @@ const router = createBrowserRouter([
     path: `${gadgetData.headphonesCategory.headphones.markIIheadphones.gadgetPageURL}`,
     element: <MarkIIHeadphonesSpecs />,
   },
+  {
+    path: `${gadgetData.headphonesCategory.headphones.markIheadphones.gadgetPageURL}`,
+    element: <MarkIIHeadphonesSpecs />,
+  },
 ]);
 
 const globalStyles = globalCss({

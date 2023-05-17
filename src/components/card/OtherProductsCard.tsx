@@ -1,10 +1,12 @@
 import { styled } from "@stitches/react";
 import { FilledButton } from "../../components/buttons/FilledButton";
+import { Link } from "react-router-dom";
 
 type OtherProductCardProps = {
   productName: string;
   productImgURL: string;
   productImgAlt: string;
+  productPageURL: string;
 };
 
 const RelatedProductsCard = styled("div", {
@@ -50,7 +52,9 @@ export const OtherProductCard = (props: OtherProductCardProps) => {
       </RelatedProductImage>
       <RelatedProductDetails>
         <RelatedProductName>{props.productName}</RelatedProductName>
-        <FilledButton text="see product" />
+        <Link to={props.productPageURL}>
+          <FilledButton text="see product" />
+        </Link>
       </RelatedProductDetails>
     </RelatedProductsCard>
   );
