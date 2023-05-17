@@ -51,7 +51,7 @@ const RelatedProductsCardContainer = styled("div", {
   justifyContent: "space-evenly",
 });
 
-export const MarkIHeadphonesSpecs = () => {
+export const YX1EarphoneSpecs = () => {
   return (
     <>
       <NavWrapper>
@@ -128,7 +128,7 @@ export const MarkIHeadphonesSpecs = () => {
           <RelatedProductHeading>you may also like</RelatedProductHeading>
           <RelatedProductsCardContainer>
             {Object.values(
-              gadgetData.headphonesCategory.headphones.XX59headphones
+              gadgetData.earphonesCategory.earphones.YX1Earphones
                 .otherRelatedProduct
             ).map((cardData) => (
               <OtherProductCard

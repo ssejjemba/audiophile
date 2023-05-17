@@ -51,7 +51,7 @@ const RelatedProductsCardContainer = styled("div", {
   justifyContent: "space-evenly",
 });
 
-export const MarkIHeadphonesSpecs = () => {
+export const ZX7SpeakerSpecs = () => {
   return (
     <>
       <NavWrapper>
@@ -62,60 +62,60 @@ export const MarkIHeadphonesSpecs = () => {
         <GadgetSection>
           <GadgetCard
             GadgetName={
-              gadgetData.speakersCategory.speakers?.ZX7Speakers.gadgetName
+              gadgetData.speakersCategory.speakers.ZX7Speakers.gadgetName
             }
             GadgetDetails={
-              gadgetData.speakersCategory.speakers?.ZX7Speakers.gadgetDetails
+              gadgetData.speakersCategory.speakers.ZX7Speakers.gadgetDetails
             }
             Src={
-              gadgetData.speakersCategory.speakers?.ZX7Speakers.gadgetImageURL
+              gadgetData.speakersCategory.speakers.ZX7Speakers.gadgetImageURL
             }
             Alt={
-              gadgetData.speakersCategory.speakers?.ZX7Speakers.gadgetImageAlt
+              gadgetData.speakersCategory.speakers.ZX7Speakers.gadgetImageAlt
             }
             IsNewLabel={
-              gadgetData.speakersCategory.speakers?.ZX7Speakers.IsNewGadgetLabel
+              gadgetData.speakersCategory.speakers.ZX7Speakers.IsNewGadgetLabel
             }
             IsCardEven={
-              gadgetData.speakersCategory.speakers?.ZX7Speakers.IsEvenCard
+              gadgetData.speakersCategory.speakers.ZX7Speakers.IsEvenCard
             }
             GadgetPrice={
-              gadgetData.speakersCategory.speakers?.ZX7Speakers.gadgetPrice
+              gadgetData.speakersCategory.speakers.ZX7Speakers.gadgetPrice
             }
             hasSpec
           />
         </GadgetSection>
         <Feature
           paragraph1={
-            gadgetData.speakersCategory.speakers?.ZX7Speakers["feature-para-1"]
+            gadgetData.speakersCategory.speakers.ZX7Speakers["feature-para-1"]
           }
           paragraph2={
-            gadgetData.speakersCategory.speakers?.ZX7Speakers["feature-para-2"]
+            gadgetData.speakersCategory.speakers.ZX7Speakers["feature-para-2"]
           }
         />
         <Gallery
           sideTopURL={
-            gadgetData.speakersCategory.speakers?.ZX7Speakers.gadgetGallery
+            gadgetData.speakersCategory.speakers.ZX7Speakers.gadgetGallery
               .sideTopImg.ImageUrl
           }
           sideTopAlt={
-            gadgetData.speakersCategory.speakers?.ZX7Speakers.gadgetGallery
+            gadgetData.speakersCategory.speakers.ZX7Speakers.gadgetGallery
               .sideTopImg.ImageAlt
           }
           sideBottomURL={
-            gadgetData.speakersCategory.speakers?.ZX7Speakers.gadgetGallery
+            gadgetData.speakersCategory.speakers.ZX7Speakers.gadgetGallery
               .sideBottomImg.ImageUrl
           }
           sideBottomAlt={
-            gadgetData.speakersCategory.speakers?.ZX7Speakers.gadgetGallery
+            gadgetData.speakersCategory.speakers.ZX7Speakers.gadgetGallery
               .sideBottomImg.ImageUrl
           }
           mainStreamURL={
-            gadgetData.speakersCategory.speakers?.ZX7Speakers.gadgetGallery
+            gadgetData.speakersCategory.speakers.ZX7Speakers.gadgetGallery
               .mainImg.ImageUrl
           }
           mainStreamAlt={
-            gadgetData.speakersCategory.speakers?.ZX7Speakers.gadgetGallery
+            gadgetData.speakersCategory.speakers.ZX7Speakers.gadgetGallery
               .mainImg.ImageUrl
           }
         />
@@ -123,7 +123,7 @@ export const MarkIHeadphonesSpecs = () => {
           <RelatedProductHeading>you may also like</RelatedProductHeading>
           <RelatedProductsCardContainer>
             {Object.values(
-              gadgetData.headphonesCategory.headphones.XX59headphones
+              gadgetData.speakersCategory.speakers.ZX7Speakers
                 .otherRelatedProduct
             ).map((cardData) => (
               <OtherProductCard

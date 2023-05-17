@@ -51,7 +51,7 @@ const RelatedProductsCardContainer = styled("div", {
   justifyContent: "space-evenly",
 });
 
-export const MarkIHeadphonesSpecs = () => {
+export const XX59headphoneSpecs = () => {
   return (
     <>
       <NavWrapper>
@@ -62,31 +62,29 @@ export const MarkIHeadphonesSpecs = () => {
         <GadgetSection>
           <GadgetCard
             GadgetName={
-              gadgetData.headphonesCategory.headphones?.XX59headphones
-                .gadgetName
+              gadgetData.headphonesCategory.headphones.XX59headphones.gadgetName
             }
             GadgetDetails={
-              gadgetData.headphonesCategory.headphones?.XX59headphones
+              gadgetData.headphonesCategory.headphones.XX59headphones
                 .gadgetDetails
             }
             Src={
-              gadgetData.headphonesCategory.headphones?.XX59headphones
+              gadgetData.headphonesCategory.headphones.XX59headphones
                 .gadgetImageURL
             }
             Alt={
-              gadgetData.headphonesCategory.headphones?.XX59headphones
+              gadgetData.headphonesCategory.headphones.XX59headphones
                 .gadgetImageAlt
             }
             IsNewLabel={
-              gadgetData.headphonesCategory.headphones?.XX59headphones
+              gadgetData.headphonesCategory.headphones.XX59headphones
                 .IsNewGadgetLabel
             }
             IsCardEven={
-              gadgetData.headphonesCategory.headphones?.XX59headphones
-                .IsEvenCard
+              gadgetData.headphonesCategory.headphones.XX59headphones.IsEvenCard
             }
             GadgetPrice={
-              gadgetData.headphonesCategory.headphones?.XX59headphones
+              gadgetData.headphonesCategory.headphones.XX59headphones
                 .gadgetPrice
             }
             hasSpec
@@ -94,39 +92,39 @@ export const MarkIHeadphonesSpecs = () => {
         </GadgetSection>
         <Feature
           paragraph1={
-            gadgetData.headphonesCategory.headphones?.XX59headphones[
+            gadgetData.headphonesCategory.headphones.XX59headphones[
               "feature-para-1"
             ]
           }
           paragraph2={
-            gadgetData.headphonesCategory.headphones?.XX59headphones[
+            gadgetData.headphonesCategory.headphones.XX59headphones[
               "feature-para-2"
             ]
           }
         />
         <Gallery
           sideTopURL={
-            gadgetData.headphonesCategory.headphones?.XX59headphones
+            gadgetData.headphonesCategory.headphones.XX59headphones
               .gadgetGallery.sideTopImg.ImageUrl
           }
           sideTopAlt={
-            gadgetData.headphonesCategory.headphones?.XX59headphones
+            gadgetData.headphonesCategory.headphones.XX59headphones
               .gadgetGallery.sideTopImg.ImageAlt
           }
           sideBottomURL={
-            gadgetData.headphonesCategory.headphones?.XX59headphones
+            gadgetData.headphonesCategory.headphones.XX59headphones
               .gadgetGallery.sideBottomImg.ImageUrl
           }
           sideBottomAlt={
-            gadgetData.headphonesCategory.headphones?.XX59headphones
+            gadgetData.headphonesCategory.headphones.XX59headphones
               .gadgetGallery.sideBottomImg.ImageUrl
           }
           mainStreamURL={
-            gadgetData.headphonesCategory.headphones?.XX59headphones
+            gadgetData.headphonesCategory.headphones.XX59headphones
               .gadgetGallery.mainImg.ImageUrl
           }
           mainStreamAlt={
-            gadgetData.headphonesCategory.headphones?.XX59headphones
+            gadgetData.headphonesCategory.headphones.XX59headphones
               .gadgetGallery.mainImg.ImageUrl
           }
         />

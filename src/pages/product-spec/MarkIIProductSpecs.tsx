@@ -51,7 +51,7 @@ const RelatedProductsCardContainer = styled("div", {
   justifyContent: "space-evenly",
 });
 
-export const MarkIIHeadphonesSpecs = () => {
+export const MarkIIHeadphoneSpecs = () => {
   return (
     <>
       <NavWrapper>
@@ -62,31 +62,31 @@ export const MarkIIHeadphonesSpecs = () => {
         <GadgetSection>
           <GadgetCard
             GadgetName={
-              gadgetData.headphonesCategory.headphones?.markIIheadphones
+              gadgetData.headphonesCategory.headphones.markIIheadphones
                 .gadgetName
             }
             GadgetDetails={
-              gadgetData.headphonesCategory.headphones?.markIIheadphones
+              gadgetData.headphonesCategory.headphones.markIIheadphones
                 .gadgetDetails
             }
             Src={
-              gadgetData.headphonesCategory.headphones?.markIIheadphones
+              gadgetData.headphonesCategory.headphones.markIIheadphones
                 .gadgetImageURL
             }
             Alt={
-              gadgetData.headphonesCategory.headphones?.markIIheadphones
+              gadgetData.headphonesCategory.headphones.markIIheadphones
                 .gadgetImageAlt
             }
             IsNewLabel={
-              gadgetData.headphonesCategory.headphones?.markIIheadphones
+              gadgetData.headphonesCategory.headphones.markIIheadphones
                 .IsNewGadgetLabel
             }
             IsCardEven={
-              gadgetData.headphonesCategory.headphones?.markIIheadphones
+              gadgetData.headphonesCategory.headphones.markIIheadphones
                 .IsEvenCard
             }
             GadgetPrice={
-              gadgetData.headphonesCategory.headphones?.markIIheadphones
+              gadgetData.headphonesCategory.headphones.markIIheadphones
                 .gadgetPrice
             }
             hasSpec
@@ -94,39 +94,39 @@ export const MarkIIHeadphonesSpecs = () => {
         </GadgetSection>
         <Feature
           paragraph1={
-            gadgetData.headphonesCategory.headphones?.markIIheadphones[
+            gadgetData.headphonesCategory.headphones.markIIheadphones[
               "feature-para-1"
             ]
           }
           paragraph2={
-            gadgetData.headphonesCategory.headphones?.markIIheadphones[
+            gadgetData.headphonesCategory.headphones.markIIheadphones[
               "feature-para-2"
             ]
           }
         />
         <Gallery
           sideTopURL={
-            gadgetData.headphonesCategory.headphones?.markIIheadphones
+            gadgetData.headphonesCategory.headphones.markIIheadphones
               .gadgetGallery.sideTopImg.ImageUrl
           }
           sideTopAlt={
-            gadgetData.headphonesCategory.headphones?.markIIheadphones
+            gadgetData.headphonesCategory.headphones.markIIheadphones
               .gadgetGallery.sideTopImg.ImageAlt
           }
           sideBottomURL={
-            gadgetData.headphonesCategory.headphones?.markIIheadphones
+            gadgetData.headphonesCategory.headphones.markIIheadphones
               .gadgetGallery.sideBottomImg.ImageUrl
           }
           sideBottomAlt={
-            gadgetData.headphonesCategory.headphones?.markIIheadphones
+            gadgetData.headphonesCategory.headphones.markIIheadphones
               .gadgetGallery.sideBottomImg.ImageUrl
           }
           mainStreamURL={
-            gadgetData.headphonesCategory.headphones?.markIIheadphones
+            gadgetData.headphonesCategory.headphones.markIIheadphones
               .gadgetGallery.mainImg.ImageUrl
           }
           mainStreamAlt={
-            gadgetData.headphonesCategory.headphones?.markIIheadphones
+            gadgetData.headphonesCategory.headphones.markIIheadphones
               .gadgetGallery.mainImg.ImageUrl
           }
         />
@@ -141,7 +141,7 @@ export const MarkIIHeadphonesSpecs = () => {
                 productName={cardData.productName}
                 productImgURL={cardData.productImgURL}
                 productImgAlt={cardData.productImgAlt}
-                productPageURL=""
+                productPageURL={cardData.productPageURL}
                 key={cardData.productName}
               />
             ))}
