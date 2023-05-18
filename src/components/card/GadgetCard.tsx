@@ -1,9 +1,11 @@
 // Company Gadget Card Component
-
 import { styled } from "@stitches/react";
+import { useState } from "react";
+
 import { FilledButton } from "../buttons/FilledButton";
 import { CartButton } from "../buttons/CartButton";
 import { StateButton } from "../buttons/StateButton";
+import { CartModal } from "../modal/CartModal";
 
 export type GadgetCardProps = {
   GadgetName: string;
@@ -91,6 +93,11 @@ const SecondaryButtonContainer = styled("div", {
 });
 
 export const GadgetCard = (props: GadgetCardProps) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal((prev) => !prev);
+  };
   return (
     <GadgetCardContainer
       style={
@@ -122,8 +129,9 @@ export const GadgetCard = (props: GadgetCardProps) => {
           {props.hasSpec ? <PriceSpan>{props.GadgetPrice}</PriceSpan> : ""}
           {props.hasSpec ? (
             <SecondaryButtonContainer>
-              <CartButton text="Add to Cart" />
+              <CartButton text="Add to Cart" onclick={openModal} />
               <StateButton text="1" />
+              <CartModal showModal={showModal} setShowModal={setShowModal} />
             </SecondaryButtonContainer>
           ) : (
             <FilledButton text="See Product" />

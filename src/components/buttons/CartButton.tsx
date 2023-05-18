@@ -2,6 +2,7 @@ import { styled } from "@stitches/react";
 
 type CartButtonProps = {
   text: string;
+  onclick?: () => void;
 };
 
 const CartButtonElement = styled("button", {
@@ -21,6 +22,8 @@ const CartButtonElement = styled("button", {
   textTransform: "uppercase",
 });
 
-export const CartButton = ({ text }: CartButtonProps) => {
-  return <CartButtonElement>{text}</CartButtonElement>;
+export const CartButton = (props: CartButtonProps) => {
+  return (
+    <CartButtonElement onClick={props.onclick}>{props.text}</CartButtonElement>
+  );
 };
