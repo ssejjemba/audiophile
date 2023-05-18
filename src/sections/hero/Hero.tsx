@@ -9,18 +9,32 @@ const HeroContainer = styled("div", {
   alignItems: "center",
   width: "100%",
   height: "calc(100% - 96px)",
-  backgroundImage: "url(home/desktop/image-hero.jpg)",
-  backgroundPosition: "center",
-  backgroundSize: "contain",
-  backgroundRepeat: "no-repeat",
+});
+
+const HeroImage = styled("div", {
+  width: "60%",
+  height: "100%",
+
+  clipPath: "circle(41% at 54% 52%)",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+});
+
+const HeroImg = styled("img", {
+  width: "980px",
+  height: "660px",
+  transform: "translate(-193px, -30px)",
+  objectFit: "cover",
 });
 
 const Aside = styled("div", {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  width: "50%",
+  width: "40%",
   height: "100%",
+  background: "radial-gradient(rgba(0,0,0,0.5), transparent)",
 });
 
 const HeroContent = styled("div", {
@@ -70,6 +84,9 @@ export const Hero = () => {
           </Link>
         </HeroContent>
       </Aside>
+      <HeroImage>
+        <HeroImg src="home/desktop/image-hero.jpg" alt="Hero Image" />
+      </HeroImage>
     </HeroContainer>
   );
 };

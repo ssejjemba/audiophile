@@ -12,8 +12,8 @@ const HomeSection = styled("section", {
   background: "$secondary",
   width: "100%",
   height: "100vh",
-  paddingLeft: "165px",
-  paddingRight: "165px",
+  paddingLeft: "100px",
+  paddingRight: "100px",
 });
 
 export default function Home() {
