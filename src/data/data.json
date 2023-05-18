@@ -1,4 +1,25 @@
 {
+  "categories": {
+    "headphonesCategory": {
+      "title": "Headphones",
+      "url": "/category-headphones/",
+      "src": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
+      "alt": "Headphones"
+    },
+    "speakersCategory": {
+      "title": "Speakers",
+      "url": "/category-speakers/",
+      "src": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
+      "alt": "Speakers"
+    },
+    "earphonesCategory": {
+      "title": "Earphones",
+      "url": "/category-earphones/",
+      "src": "/product-yx1-earphones/desktop/image-category-page-preview.jpg",
+      "alt": "Earphones"
+    }
+  },
+
   "headphonesCategory": {
     "productTitle": "headphones",
     "headphones": {
@@ -152,6 +173,11 @@
         "IsNewGadgetLabel": true,
         "IsEvenCard": true,
         "gadgetImageURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
+        "gadgetThumbnail": "",
+        "productSrc": "/home/desktop/image-speaker-zx9.png",
+        "productAlt": "Zx9-speaker-image",
+        "productDetails": "Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound",
+        "background": "/home/desktop/pattern-circles.svg",
         "gadgetImageAlt": "ZX9 SPEAKER Image",
         "gadgetPrice": "$ 4,500",
         "gadgetDetails": "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
@@ -198,6 +224,7 @@
         "IsNewGadgetLabel": false,
         "IsEvenCard": false,
         "gadgetImageURL": "/product-zx7-speaker/desktop/image-category-page-preview.jpg",
+        "gadgetThumbnail": "/home/desktop/image-speaker-zx7.jpg",
         "gadgetImageAlt": "ZX7 SPEAKER Image",
         "gadgetPrice": "$ 3,500",
         "gadgetDetails": "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
@@ -250,6 +277,7 @@
         "IsNewGadgetLabel": true,
         "IsEvenCard": true,
         "gadgetImageURL": "/product-yx1-earphones/desktop/image-category-page-preview.jpg",
+        "gadgetThumbnail": "home/desktop/image-earphones-yx1.jpg",
         "gadgetImageAlt": "YX1 WIRELESS EARPHONES Image",
         "gadgetPrice": "$ 599",
         "gadgetDetails": "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",

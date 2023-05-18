@@ -1,6 +1,6 @@
 import { styled } from "@stitches/react";
 import { ProductExpo } from "../../components/product-expo/ProductExpo";
-import productData from "../../data/product.json";
+import Data from "../../data/data.json";
 
 const EarphonesSection = styled("section", {
   height: "60vh",
@@ -15,9 +15,11 @@ export const ProductEarphones = () => {
   return (
     <EarphonesSection>
       <ProductExpo
-        ProductName={productData.earphonesY.productName}
-        ProductThumbnail={productData.earphonesY.productThumbnail}
-        ProductURL={productData.earphonesY.productURL}
+        ProductName={Data.earphonesCategory.earphones.YX1Earphones.gadgetName}
+        ProductThumbnail={
+          Data.earphonesCategory.earphones.YX1Earphones.gadgetThumbnail
+        }
+        ProductURL={Data.earphonesCategory.earphones.YX1Earphones.gadgetPageURL}
         ButtonTheme="light"
         gutterX="30px"
         backColor="hsl(0, 0%, 95%)"

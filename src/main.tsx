@@ -6,9 +6,13 @@ import App from "./App.tsx";
 import { CategoryHeadphones } from "./pages/categories/Category.tsx";
 import { CategorySpeakers } from "./pages/categories/Category.tsx";
 import { CategoryEarphones } from "./pages/categories/Category.tsx";
-import { MarkIIHeadphonesSpecs } from "./pages/product-spec/MarkIIProductSpecs.tsx";
-import productData from "./data/product.json";
-import gadgetData from "./data/data.json";
+import { MarkIIHeadphoneSpecs } from "./pages/product-spec/MarkIIProductSpecs.tsx";
+import { MarkIHeadphoneSpecs } from "./pages/product-spec/MarkIProductSpec.tsx";
+import { XX59headphoneSpecs } from "./pages/product-spec/XX59ProductSpecs.tsx";
+import { YX1EarphoneSpecs } from "./pages/product-spec/YX1ProductSpecs.tsx";
+import { ZX7SpeakerSpecs } from "./pages/product-spec/ZX7ProductSpecs.tsx";
+import { ZX9SpeakerSpecs } from "./pages/product-spec/ZX9ProductSpecs.tsx";
+import Data from "./data/data.json";
 import { globalCss } from "../stitches.config.ts";
 
 const router = createBrowserRouter([
@@ -20,25 +24,41 @@ const router = createBrowserRouter([
   },
   // Navigation Routes
   {
-    path: `${productData.speakers9.productURL}`,
+    path: `${Data.categories.earphonesCategory.url}`,
     element: <CategoryEarphones />,
   },
   {
-    path: `${productData.speakers7.productURL}`,
+    path: `${Data.categories.headphonesCategory.url}`,
     element: <CategoryHeadphones />,
   },
   {
-    path: `${productData.earphonesY.productURL}`,
+    path: `${Data.categories.speakersCategory.url}`,
     element: <CategorySpeakers />,
   },
   // Product Spec Routes
   {
-    path: `${gadgetData.headphonesCategory.headphones.markIIheadphones.gadgetPageURL}`,
-    element: <MarkIIHeadphonesSpecs />,
+    path: `${Data.headphonesCategory.headphones.markIIheadphones.gadgetPageURL}`,
+    element: <MarkIIHeadphoneSpecs />,
   },
   {
-    path: `${gadgetData.headphonesCategory.headphones.markIheadphones.gadgetPageURL}`,
-    element: <MarkIIHeadphonesSpecs />,
+    path: `${Data.headphonesCategory.headphones.markIheadphones.gadgetPageURL}`,
+    element: <MarkIHeadphoneSpecs />,
+  },
+  {
+    path: `${Data.headphonesCategory.headphones.XX59headphones.gadgetPageURL}`,
+    element: <XX59headphoneSpecs />,
+  },
+  {
+    path: `${Data.earphonesCategory.earphones.YX1Earphones.gadgetPageURL}`,
+    element: <YX1EarphoneSpecs />,
+  },
+  {
+    path: `${Data.speakersCategory.speakers.ZX7Speakers.gadgetPageURL}`,
+    element: <ZX7SpeakerSpecs />,
+  },
+  {
+    path: `${Data.speakersCategory.speakers.ZX9Speakers.gadgetPageURL}`,
+    element: <ZX9SpeakerSpecs />,
   },
 ]);
 

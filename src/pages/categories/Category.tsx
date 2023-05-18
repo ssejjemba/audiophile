@@ -2,7 +2,7 @@ import { GadgetCard } from "../../components/card/GadgetCard";
 import { CategoryHero } from "../../sections/category-hero/CategoryHero";
 import { CategoryFoot } from "../../sections/category-foot/CategoryFoot";
 import { styled } from "@stitches/react";
-import gadgetData from "../../data/data.json";
+import Data from "../../data/data.json";
 
 const GadgetContainer = styled("main", {
   width: "100%",
@@ -20,9 +20,9 @@ const GadgetSection = styled("section", {
 export const CategoryEarphones = () => {
   return (
     <>
-      <CategoryHero title={gadgetData.earphonesCategory.productTitle} />
+      <CategoryHero title={Data.earphonesCategory.productTitle} />
       <GadgetContainer>
-        {Object.values(gadgetData.earphonesCategory.earphones).map((card) => (
+        {Object.values(Data.earphonesCategory.earphones).map((card) => (
           <GadgetSection>
             <GadgetCard
               GadgetName={card.gadgetName}
@@ -44,9 +44,9 @@ export const CategoryEarphones = () => {
 export const CategoryHeadphones = () => {
   return (
     <>
-      <CategoryHero title={gadgetData.headphonesCategory.productTitle} />
+      <CategoryHero title={Data.headphonesCategory.productTitle} />
       <GadgetContainer>
-        {Object.values(gadgetData.headphonesCategory.headphones).map((card) => (
+        {Object.values(Data.headphonesCategory.headphones).map((card) => (
           <GadgetSection>
             <GadgetCard
               GadgetName={card.gadgetName}
@@ -68,10 +68,10 @@ export const CategoryHeadphones = () => {
 export const CategorySpeakers = () => {
   return (
     <>
-      <CategoryHero title={gadgetData.speakersCategory.productTitle} />
+      <CategoryHero title={Data.speakersCategory.productTitle} />
 
       <GadgetContainer>
-        {Object.values(gadgetData.speakersCategory.speakers).map((card) => (
+        {Object.values(Data.speakersCategory.speakers).map((card) => (
           <GadgetSection>
             <GadgetCard
               GadgetName={card.gadgetName}

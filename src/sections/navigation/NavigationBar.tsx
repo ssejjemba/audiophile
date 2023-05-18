@@ -1,5 +1,5 @@
 import { styled } from "@stitches/react";
-import productData from "../../data/product.json";
+import Data from "../../data/data.json";
 
 type NavProps = {
   hasBorder: boolean;
@@ -71,13 +71,13 @@ export const NavigationBar = ({ hasBorder }: NavProps) => {
           <Link href="/">Home</Link>
         </LinkContainer>
         <LinkContainer>
-          <Link href={productData.speakers7.productURL}>HEADPHONES</Link>
+          <Link href={Data.categories.headphonesCategory.url}>HEADPHONES</Link>
         </LinkContainer>
         <LinkContainer>
-          <Link href={productData.speakers9.productURL}>SPEAKERS</Link>
+          <Link href={Data.categories.speakersCategory.url}>SPEAKERS</Link>
         </LinkContainer>
         <LinkContainer>
-          <Link href={productData.earphonesY.productURL}>EARPHONES</Link>
+          <Link href={Data.categories.earphonesCategory.url}>EARPHONES</Link>
         </LinkContainer>
       </LinksList>
 

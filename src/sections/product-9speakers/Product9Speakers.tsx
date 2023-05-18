@@ -1,6 +1,6 @@
 import { styled } from "@stitches/react";
 import { ProductExpo } from "../../components/product-expo/ProductExpo";
-import productData from "../../data/product.json";
+import Data from "../../data/data.json";
 
 const Zx9SpeakerSection = styled("section", {
   height: "100vh",
@@ -15,12 +15,16 @@ export const Product9Speakers = () => {
   return (
     <Zx9SpeakerSection>
       <ProductExpo
-        ProductName={productData.speakers9.productName}
-        ProductURL={productData.speakers9.productURL}
-        ProductThumbnail={productData.speakers9.productThumbnail}
-        ProductSrc={productData.speakers9.productSrc}
-        ProductAlt={productData.speakers9.productAlt}
-        ProductDetails={productData.speakers9.productDetails}
+        ProductName={Data.speakersCategory.speakers.ZX9Speakers.gadgetName}
+        ProductURL={Data.speakersCategory.speakers.ZX9Speakers.gadgetPageURL}
+        ProductThumbnail={
+          Data.speakersCategory.speakers.ZX9Speakers.gadgetThumbnail
+        }
+        ProductSrc={Data.speakersCategory.speakers.ZX9Speakers.productSrc}
+        ProductAlt={Data.speakersCategory.speakers.ZX9Speakers.productAlt}
+        ProductDetails={
+          Data.speakersCategory.speakers.ZX9Speakers.productDetails
+        }
         ButtonTheme="dark"
         height="500px"
         padX="50px 95px 0"
@@ -28,7 +32,7 @@ export const Product9Speakers = () => {
         display="flex"
         objCenter="center"
         objEnd="flex-end"
-        background={`hsl(22, 65%, 57%) url(${productData.speakers9.background})`}
+        background={`hsl(22, 65%, 57%) url(${Data.speakersCategory.speakers.ZX9Speakers.background})`}
       />
     </Zx9SpeakerSection>
   );
