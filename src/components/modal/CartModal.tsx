@@ -2,6 +2,7 @@ import { SetStateAction, Dispatch, useRef } from "react";
 import { styled } from "@stitches/react";
 import { Cart } from "../card/Cart";
 import Data from "../../data/data.json";
+import { formatCurrency } from "../../utilities/formatCurrency";
 
 type CartModalProps = {
   showModal: boolean;
@@ -148,7 +149,7 @@ export const CartModal = (props: CartModalProps) => {
               itemImageSrc={cartItem.itemImageSrc}
               itemImageAlt={cartItem.itemImageAlt}
               itemName={cartItem.itemName}
-              itemPrice={cartItem.itemPrice}
+              itemPrice={formatCurrency(cartItem.itemPrice)}
               itemsNumber={cartItem.itemsNumber}
             />
           ))}

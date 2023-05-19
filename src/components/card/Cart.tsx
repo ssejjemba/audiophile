@@ -3,7 +3,7 @@ import { StateButton } from "../buttons/StateButton";
 
 type CartProps = {
   itemName: string;
-  itemPrice: string;
+  itemPrice: number | string;
   itemImageSrc: string;
   itemImageAlt: string;
   itemsNumber: string;
