@@ -83,6 +83,7 @@ export const YX1EarphoneSpecs = () => {
             GadgetPrice={
               gadgetData.earphonesCategory.earphones.YX1Earphones.gadgetPrice
             }
+            id={gadgetData.earphonesCategory.earphones.YX1Earphones.gadgetId}
             hasSpec
           />
         </GadgetSection>

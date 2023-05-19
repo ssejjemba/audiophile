@@ -89,6 +89,9 @@ export const MarkIHeadphoneSpecs = () => {
               gadgetData.headphonesCategory.headphones.markIheadphones
                 .gadgetPrice
             }
+            id={
+              gadgetData.headphonesCategory.headphones.markIheadphones.gadgetId
+            }
             hasSpec
           />
         </GadgetSection>

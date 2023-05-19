@@ -16,6 +16,7 @@ export type GadgetCardProps = {
   GadgetPrice?: string;
   Src: string;
   Alt: string;
+  id: number;
 };
 const GadgetCardContainer = styled("div", {
   width: "100%",
@@ -130,7 +131,7 @@ export const GadgetCard = (props: GadgetCardProps) => {
           {props.hasSpec ? (
             <SecondaryButtonContainer>
               <CartButton text="Add to Cart" onclick={openModal} />
-              <StateButton />
+              <StateButton id={props.id} />
               <CartModal showModal={showModal} setShowModal={setShowModal} />
             </SecondaryButtonContainer>
           ) : (

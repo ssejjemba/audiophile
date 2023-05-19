@@ -82,6 +82,7 @@ export const ZX9SpeakerSpecs = () => {
             GadgetPrice={
               gadgetData.speakersCategory.speakers.ZX9Speakers.gadgetPrice
             }
+            id={gadgetData.speakersCategory.speakers.ZX9Speakers.gadgetId}
             hasSpec
           />
         </GadgetSection>

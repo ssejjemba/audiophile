@@ -1,7 +1,8 @@
 import { styled } from "@stitches/react";
+import { useShoppingCart } from "../../context/ShoppingCartContext";
 
 export type StateButtonProps = {
-  onClick?: () => void;
+  id: number;
 };
 
 const StateButtonContainer = styled("div", {
@@ -10,7 +11,14 @@ const StateButtonContainer = styled("div", {
   background: "$gray400",
 });
 
-const StateButtonElement = styled("button", {
+const StateDecreaseButtonElement = styled("button", {
+  border: "none",
+  outline: "none",
+  cursor: "pointer",
+  padding: "15px 30px",
+});
+
+const StateIncreaseButtonElement = styled("button", {
   border: "none",
   outline: "none",
   cursor: "pointer",
@@ -28,11 +36,15 @@ const StateButtonSpan = styled("span", {
   textTransform: "uppercase",
 });
 
-export const StateButton = () => {
-  const itemsQuantity = 0;
+export const StateButton = (props: StateButtonProps) => {
+  const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity } =
+    useShoppingCart();
+  const itemsQuantity = getItemQuantity(props.id);
   return (
     <StateButtonContainer>
-      <StateButtonElement>
+      <StateDecreaseButtonElement
+        onClick={() => decreaseCartQuantity(props.id)}
+      >
         <svg
           width="5"
           height="2"
@@ -46,9 +58,11 @@ export const StateButton = () => {
             fill="black"
           />
         </svg>
-      </StateButtonElement>
+      </StateDecreaseButtonElement>
       <StateButtonSpan>{itemsQuantity}</StateButtonSpan>
-      <StateButtonElement>
+      <StateIncreaseButtonElement
+        onClick={() => increaseCartQuantity(props.id)}
+      >
         <svg
           width="7"
           height="7"
@@ -62,7 +76,7 @@ export const StateButton = () => {
             fill="black"
           />
         </svg>
-      </StateButtonElement>
+      </StateIncreaseButtonElement>
     </StateButtonContainer>
   );
 };

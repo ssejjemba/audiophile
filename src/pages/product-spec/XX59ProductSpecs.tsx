@@ -88,6 +88,9 @@ export const XX59headphoneSpecs = () => {
                 .gadgetPrice
             }
             hasSpec
+            id={
+              gadgetData.headphonesCategory.headphones.XX59headphones.gadgetId
+            }
           />
         </GadgetSection>
         <Feature
