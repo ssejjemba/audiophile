@@ -6,7 +6,6 @@ type CartProps = {
   itemPrice: number | string;
   itemImageSrc: string;
   itemImageAlt: string;
-  itemsNumber: string;
 };
 
 const CartItemCard = styled("div", {
@@ -74,7 +73,7 @@ export const Cart = (props: CartProps) => {
         </CartItemCaption>
       </CartItemThumbnail>
       <ButtonWrapper>
-        <StateButton text={props.itemsNumber} />
+        <StateButton />
       </ButtonWrapper>
     </CartItemCard>
   );

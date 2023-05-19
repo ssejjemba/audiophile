@@ -1,7 +1,6 @@
 import { styled } from "@stitches/react";
 
 export type StateButtonProps = {
-  text: string;
   onClick?: () => void;
 };
 
@@ -29,7 +28,8 @@ const StateButtonSpan = styled("span", {
   textTransform: "uppercase",
 });
 
-export const StateButton = ({ text }: StateButtonProps) => {
+export const StateButton = () => {
+  const itemsQuantity = 0;
   return (
     <StateButtonContainer>
       <StateButtonElement>
@@ -47,7 +47,7 @@ export const StateButton = ({ text }: StateButtonProps) => {
           />
         </svg>
       </StateButtonElement>
-      <StateButtonSpan>{text}</StateButtonSpan>
+      <StateButtonSpan>{itemsQuantity}</StateButtonSpan>
       <StateButtonElement>
         <svg
           width="7"

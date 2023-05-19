@@ -150,7 +150,6 @@ export const CartModal = (props: CartModalProps) => {
               itemImageAlt={cartItem.itemImageAlt}
               itemName={cartItem.itemName}
               itemPrice={formatCurrency(cartItem.itemPrice)}
-              itemsNumber={cartItem.itemsNumber}
             />
           ))}
         </CartItemsContainer>

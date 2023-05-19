@@ -130,7 +130,7 @@ export const GadgetCard = (props: GadgetCardProps) => {
           {props.hasSpec ? (
             <SecondaryButtonContainer>
               <CartButton text="Add to Cart" onclick={openModal} />
-              <StateButton text="1" />
+              <StateButton />
               <CartModal showModal={showModal} setShowModal={setShowModal} />
             </SecondaryButtonContainer>
           ) : (
