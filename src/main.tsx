@@ -14,6 +14,7 @@ import { ZX7SpeakerSpecs } from "./pages/product-spec/ZX7ProductSpecs.tsx";
 import { ZX9SpeakerSpecs } from "./pages/product-spec/ZX9ProductSpecs.tsx";
 import Data from "./data/data.json";
 import { globalCss } from "../stitches.config.ts";
+import { ShoppingCartContextProvider } from "./context/ShoppingCartContext.tsx";
 
 const router = createBrowserRouter([
   // Root Home Route
@@ -143,7 +144,9 @@ export const Root = () => {
   globalStyles();
   return (
     <React.StrictMode>
-      <RouterProvider router={router}></RouterProvider>
+      <ShoppingCartContextProvider>
+        <RouterProvider router={router}></RouterProvider>
+      </ShoppingCartContextProvider>
     </React.StrictMode>
   );
 };
