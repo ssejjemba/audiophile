@@ -12,6 +12,8 @@ To get started with the Music Gadgets E-commerce website, follow these steps:
 4. Start the development server: `npm run dev`
 5. Open your browser and visit: `http://localhost:3000`
 
+Find the **Demo Link [here](https://thunderous-marshmallow-afa9bb.netlify.app/)**
+
 ## 💡 Features
 
 - **Product Catalog**: Browse a wide selection of music gadgets, including instruments, audio equipment, accessories, and more.
