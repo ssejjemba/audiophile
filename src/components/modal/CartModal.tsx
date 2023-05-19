@@ -1,6 +1,7 @@
 import { SetStateAction, Dispatch, useRef } from "react";
 import { styled } from "@stitches/react";
 import { Cart } from "../card/Cart";
+import Data from "../../data/data.json";
 
 type CartModalProps = {
   showModal: boolean;
@@ -142,29 +143,15 @@ export const CartModal = (props: CartModalProps) => {
           <RemoveAllBtn>Remove All</RemoveAllBtn>
         </ContentHeadingBox>
         <CartItemsContainer>
-          <Cart
-            itemImageSrc="/cart/image-xx99-mark-two-headphones.jpg"
-            itemImageAlt="XX99 MK II Image"
-            itemName="XX99 MK II"
-            itemPrice="$ 2,999"
-            itemsNumber="1"
-          />
-
-          <Cart
-            itemImageSrc="/cart/image-xx59-headphones.jpg"
-            itemImageAlt="XX99 MK II Image"
-            itemName="XX59"
-            itemPrice="$ 899"
-            itemsNumber="2"
-          />
-
-          <Cart
-            itemImageSrc="/cart/image-yx1-earphones.jpg"
-            itemImageAlt="YX1 Image"
-            itemName="YX1"
-            itemPrice="$ 599"
-            itemsNumber="1"
-          />
+          {Object.values(Data.cartItems).map((cartItem) => (
+            <Cart
+              itemImageSrc={cartItem.itemImageSrc}
+              itemImageAlt={cartItem.itemImageAlt}
+              itemName={cartItem.itemName}
+              itemPrice={cartItem.itemPrice}
+              itemsNumber={cartItem.itemsNumber}
+            />
+          ))}
         </CartItemsContainer>
         <TotalCostContainer>
           <TotalCostText>Total</TotalCostText>

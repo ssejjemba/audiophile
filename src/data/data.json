@@ -20,6 +20,32 @@
     }
   },
 
+  "cartItems": {
+    "XX99 MK II headphones": {
+      "itemName": "XX99 MK II",
+      "itemImageSrc": "/cart/image-xx99-mark-two-headphones.jpg",
+      "itemImageAlt": "XX99 MK II Image",
+      "itemPrice": "$ 2,999",
+      "itemsNumber": "1"
+    },
+
+    "XX59 headphones": {
+      "itemName": "XX59",
+      "itemImageSrc": "/cart/image-xx59-headphones.jpg",
+      "itemImageAlt": "XX99 MK II Image",
+      "itemPrice": "$ 899",
+      "itemsNumber": "2"
+    },
+
+    "YXI earphones": {
+      "itemName": "YX1",
+      "itemImageSrc": "/cart/image-yx1-earphones.jpg",
+      "itemImageAlt": "YX1 Image",
+      "itemPrice": "$ 599",
+      "itemsNumber": "1"
+    }
+  },
+
   "headphonesCategory": {
     "productTitle": "headphones",
     "headphones": {
