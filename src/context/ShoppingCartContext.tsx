@@ -1,14 +1,24 @@
 import { useContext, createContext, useState } from "react";
+// import { CartModal } from "../components/modal/CartModal";
 
 type ShoppingCartProviderProps = {
   children: React.ReactNode;
 };
 
+type cartItem = {
+  id: number;
+  quantity: number;
+};
+
 type ShoppingCartContext = {
+  openCart: () => void;
+  closeCart: () => void;
   getItemQuantity: (id: number) => number;
   increaseCartQuantity: (id: number) => void;
   decreaseCartQuantity: (id: number) => void;
   removeFromCart: (id: number) => void;
+  cartQuantity: number;
+  cartItems: cartItem[];
 };
 
 const ShoppingCartContext = createContext({} as ShoppingCartContext);
@@ -25,10 +35,20 @@ export function ShoppingCartContextProvider({
     { id: number; quantity: number }[]
   >([]);
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const cartQuantity = cartItems.reduce(
+    (quantity, item) => item.quantity + quantity,
+    0
+  );
+
+  const openCart = () => setIsOpen(true);
+
+  const closeCart = () => setIsOpen(false);
+
   function getItemQuantity(id: number) {
     return cartItems?.find((item) => item.id == id)?.quantity || 0;
   }
-
   function increaseCartQuantity(id: number) {
     setCartItems((currItems) => {
       if (currItems.find((item) => item.id === id) == null) {
@@ -44,7 +64,6 @@ export function ShoppingCartContextProvider({
       }
     });
   }
-
   function decreaseCartQuantity(id: number) {
     setCartItems((currItems) => {
       if (currItems.find((item) => item.id === id)?.quantity === 1) {
@@ -60,7 +79,6 @@ export function ShoppingCartContextProvider({
       }
     });
   }
-
   function removeFromCart(id: number) {
     setCartItems((currItems) => {
       return currItems.filter((item) => item.id !== id);
@@ -74,6 +92,10 @@ export function ShoppingCartContextProvider({
         increaseCartQuantity,
         decreaseCartQuantity,
         removeFromCart,
+        openCart,
+        closeCart,
+        cartItems,
+        cartQuantity,
       }}
     >
       {children}

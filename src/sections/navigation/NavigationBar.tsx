@@ -1,5 +1,6 @@
 import { styled } from "@stitches/react";
 import Data from "../../data/data.json";
+import { useShoppingCart } from "../../context/ShoppingCartContext";
 
 type NavProps = {
   hasBorder: boolean;
@@ -69,6 +70,8 @@ const NotificationBox = styled("div", {
 });
 
 export const NavigationBar = ({ hasBorder }: NavProps) => {
+  const { openCart, cartQuantity } = useShoppingCart();
+
   return (
     <Nav
       style={
@@ -108,7 +111,7 @@ export const NavigationBar = ({ hasBorder }: NavProps) => {
         </LinkContainer>
       </LinksList>
 
-      <CartButton>
+      <CartButton onClick={openCart}>
         <svg
           width="24"
           height="20"
@@ -123,7 +126,7 @@ export const NavigationBar = ({ hasBorder }: NavProps) => {
             fill="white"
           />
         </svg>
-        <NotificationBox>3</NotificationBox>
+        {cartQuantity > 0 && <NotificationBox>{cartQuantity}</NotificationBox>}
       </CartButton>
     </Nav>
   );
