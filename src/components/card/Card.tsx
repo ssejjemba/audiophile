@@ -4,6 +4,7 @@ export type CardProps = {
   title: string;
   src: string;
   alt: string;
+  url: string;
 };
 
 const CategoryCard = styled("div", {
@@ -78,7 +79,7 @@ export const Card = (props: CardProps) => {
       </CardImage>
       <CardDetails>
         <CardTitle>{props.title}</CardTitle>
-        <CardLink href="">
+        <CardLink href={props.url}>
           <ButtonText>shop</ButtonText>
           <svg
             width="8"

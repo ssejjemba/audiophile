@@ -28,6 +28,7 @@ export const Categories = () => {
             src={category.src}
             alt={category.alt}
             key={category.title}
+            url={category.url}
           />
         ))}
       </CategoriesContainer>
