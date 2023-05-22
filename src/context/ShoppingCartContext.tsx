@@ -79,10 +79,8 @@ export function ShoppingCartContextProvider({
       }
     });
   }
-  function removeFromCart(id: number) {
-    setCartItems((currItems) => {
-      return currItems.filter((item) => item.id !== id);
-    });
+  function removeFromCart() {
+    setCartItems([]);
   }
 
   return (
