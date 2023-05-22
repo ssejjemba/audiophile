@@ -16,7 +16,7 @@ const CategoryCard = styled("div", {
 const CardImage = styled("div", {
   width: "100%",
   height: "50%",
-  transform: "translateY(-173px)",
+  transform: "translateY(-120px)",
 });
 
 const CardImg = styled("img", {

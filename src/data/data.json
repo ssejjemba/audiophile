@@ -3,19 +3,19 @@
     "headphonesCategory": {
       "title": "Headphones",
       "url": "/category-headphones/",
-      "src": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
+      "src": "/shared/desktop/image-category-thumbnail-headphones.png",
       "alt": "Headphones"
     },
     "speakersCategory": {
       "title": "Speakers",
       "url": "/category-speakers/",
-      "src": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
+      "src": "/shared/desktop/image-category-thumbnail-speakers.png",
       "alt": "Speakers"
     },
     "earphonesCategory": {
       "title": "Earphones",
       "url": "/category-earphones/",
-      "src": "/product-yx1-earphones/desktop/image-category-page-preview.jpg",
+      "src": "/shared/desktop/image-category-thumbnail-earphones.png",
       "alt": "Earphones"
     }
   },
