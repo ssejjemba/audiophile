@@ -6,8 +6,8 @@ import { formatCurrency } from "../../utilities/formatCurrency";
 import Data from "../../data/data.json";
 
 type CartModalProps = {
-  id: number;
-  quantity: number;
+  id?: number;
+  quantity?: number;
   showModal: boolean;
   setShowModal: Dispatch<SetStateAction<boolean>>;
 };
@@ -121,6 +121,8 @@ export const CartModal = (props: CartModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const { removeFromCart, cartItems, closeCart } = useShoppingCart();
 
+  const item = Data.cartItems.find((i) => i.itemId === props.id);
+
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const closeModal = (event: any) => {
     if (modalRef.current === event.target) {
@@ -136,7 +138,7 @@ export const CartModal = (props: CartModalProps) => {
             <HeadingText>CART</HeadingText>
             <HeadingNum>({props.quantity})</HeadingNum>
           </ModalHeading>
-          <RemoveAllBtn onClick={() => removeFromCart(0)}>
+          <RemoveAllBtn onClick={() => removeFromCart(-1)}>
             Remove All
           </RemoveAllBtn>
         </ContentHeadingBox>
