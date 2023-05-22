@@ -121,8 +121,6 @@ export const CartModal = (props: CartModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const { removeFromCart, cartItems, closeCart } = useShoppingCart();
 
-  const item = Data.cartItems.find((i) => i.itemId === props.id);
-
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const closeModal = (event: any) => {
     if (modalRef.current === event.target) {
