@@ -1,8 +1,9 @@
 import { styled } from "@stitches/react";
+import { useShoppingCart } from "../../context/ShoppingCartContext";
 
 type CartButtonProps = {
   text: string;
-  onclick?: () => void;
+  id: number;
 };
 
 const CartButtonElement = styled("button", {
@@ -23,7 +24,10 @@ const CartButtonElement = styled("button", {
 });
 
 export const CartButton = (props: CartButtonProps) => {
+  const { increaseCartQuantity } = useShoppingCart();
   return (
-    <CartButtonElement onClick={props.onclick}>{props.text}</CartButtonElement>
+    <CartButtonElement onClick={() => increaseCartQuantity(props.id)}>
+      {props.text}
+    </CartButtonElement>
   );
 };

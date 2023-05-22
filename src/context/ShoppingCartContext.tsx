@@ -1,5 +1,6 @@
 import { useContext, createContext, useState } from "react";
-// import { CartModal } from "../components/modal/CartModal";
+import { CartModal } from "../components/modal/CartModal";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 
 type ShoppingCartProviderProps = {
   children: React.ReactNode;
@@ -23,7 +24,6 @@ type ShoppingCartContext = {
 
 const ShoppingCartContext = createContext({} as ShoppingCartContext);
 
-// eslint-disable-next-line react-refresh/only-export-components
 export function useShoppingCart() {
   return useContext(ShoppingCartContext);
 }
@@ -31,9 +31,9 @@ export function useShoppingCart() {
 export function ShoppingCartContextProvider({
   children,
 }: ShoppingCartProviderProps) {
-  const [cartItems, setCartItems] = useState<
+  const [cartItems, setCartItems] = useLocalStorage<
     { id: number; quantity: number }[]
-  >([]);
+  >("shopping-cart", []);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -99,6 +99,7 @@ export function ShoppingCartContextProvider({
       }}
     >
       {children}
+      <CartModal showModal={isOpen} setShowModal={setIsOpen} />
     </ShoppingCartContext.Provider>
   );
 }
