@@ -51,7 +51,7 @@ export function ShoppingCartContextProvider({
   }
   function increaseCartQuantity(id: number) {
     setCartItems((currItems) => {
-      if (currItems.find((item) => item.id === id) == null) {
+      if (currItems.find((item) => item.id === id) == null || 0) {
         return [...currItems, { id, quantity: 1 }];
       } else {
         return currItems.map((item) => {
@@ -79,6 +79,7 @@ export function ShoppingCartContextProvider({
       }
     });
   }
+
   function removeFromCart() {
     setCartItems([]);
   }
