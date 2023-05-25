@@ -31,14 +31,38 @@
 
     {
       "itemId": 2,
-      "itemName": "XX59",
-      "itemImageSrc": "/cart/image-xx59-headphones.jpg",
-      "itemImageAlt": "XX99 MK II Image",
-      "itemPrice": 899
+      "itemName": "XX99 MK I",
+      "itemImageSrc": "/cart/image-xx99-mark-one-headphones.jpg",
+      "itemImageAlt": "XX99 MK I Image",
+      "itemPrice": 1750
     },
 
     {
       "itemId": 3,
+      "itemName": "XX59",
+      "itemImageSrc": "/cart/image-xx59-headphones.jpg",
+      "itemImageAlt": "XX59 headphones Image",
+      "itemPrice": 899
+    },
+
+    {
+      "itemId": 4,
+      "itemName": "ZX7 Speaker",
+      "itemImageSrc": "/cart/image-zx7-speaker.jpg",
+      "itemImageAlt": "ZX7 Speaker Image",
+      "itemPrice": 3500
+    },
+
+    {
+      "itemId": 5,
+      "itemName": "ZX9 Speaker",
+      "itemImageSrc": "/cart/image-zx9-speaker.jpg",
+      "itemImageAlt": "ZX9 Speaker Image",
+      "itemPrice": 4500
+    },
+
+    {
+      "itemId": 6,
       "itemName": "YX1",
       "itemImageSrc": "/cart/image-yx1-earphones.jpg",
       "itemImageAlt": "YX1 Image",
@@ -91,7 +115,7 @@
           "product3": {
             "productName": "ZX9 SPEAKER",
             "productImgURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
-            "productPageURL": "/category-speakers/ZX9-Speaker",
+            "productPageURL": "/category-speakers/ZX9-Speakers",
             "productImgAlt": "ZX9 SPEAKER Image"
           }
         }
@@ -138,7 +162,7 @@
           "product3": {
             "productName": "ZX9 SPEAKER",
             "productImgURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
-            "productPageURL": "/category-speakers/ZX9-Speaker",
+            "productPageURL": "/category-speakers/ZX9-Speakers",
             "productImgAlt": "ZX9 SPEAKER Image"
           }
         }
@@ -186,7 +210,7 @@
           "product3": {
             "productName": "ZX9 SPEAKER",
             "productImgURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
-            "productPageURL": "/category-headphones/ZX9-Speaker",
+            "productPageURL": "/category-speakers/ZX9-Speakers",
             "productImgAlt": "ZX9 SPEAKER Image"
           }
         }
@@ -232,7 +256,7 @@
           "product1": {
             "productName": "ZX7 SPEAKER",
             "productImgURL": "/product-zx7-speaker/desktop/image-category-page-preview.jpg",
-            "productPageURL": "/category-speakers/ZX7-Speaker",
+            "productPageURL": "/category-speakers/ZX7-Speakers",
             "productImgAlt": "ZX7 SPEAKER Image"
           },
           "product2": {
@@ -280,7 +304,7 @@
           "product1": {
             "productName": "ZX9 SPEAKER",
             "productImgURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
-            "productPageURL": "/category-speakers/ZX9-Speaker",
+            "productPageURL": "/category-speakers/ZX9-Speakers",
             "productImgAlt": "ZX9 SPEAKER Image"
           },
           "product2": {
@@ -346,7 +370,7 @@
           "product3": {
             "productName": "ZX9 SPEAKER",
             "productImgURL": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
-            "productPageURL": "/category-speakers/ZX9-Speaker",
+            "productPageURL": "/category-speakers/ZX9-Speakers",
             "productImgAlt": "ZX9 SPEAKER Image"
           }
         }

@@ -3,10 +3,12 @@ import { styled } from "@stitches/react";
 import { FilledButton } from "../buttons/FilledButton";
 import { CartButton } from "../buttons/CartButton";
 import { StateButton } from "../buttons/StateButton";
+import { Link } from "react-router-dom";
 
 export type GadgetCardProps = {
   GadgetName: string;
   GadgetDetails: string;
+  GadgetSpecURL: string;
   IsNewLabel: boolean;
   IsCardEven: boolean;
   hasSpec: boolean;
@@ -126,7 +128,9 @@ export const GadgetCard = (props: GadgetCardProps) => {
               <StateButton id={props.id} />
             </SecondaryButtonContainer>
           ) : (
-            <FilledButton text="See Product" />
+            <Link to={`${props.GadgetSpecURL}`}>
+              <FilledButton text="See Product" />
+            </Link>
           )}
         </GadgetCardDetailsBox>
       </GadgetCardDescription>

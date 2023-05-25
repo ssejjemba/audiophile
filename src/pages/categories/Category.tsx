@@ -27,6 +27,7 @@ export const CategoryEarphones = () => {
             <GadgetCard
               GadgetName={card.gadgetName}
               GadgetDetails={card.gadgetDetails}
+              GadgetSpecURL={card.gadgetPageURL}
               Src={card.gadgetImageURL}
               Alt={card.gadgetImageAlt}
               IsNewLabel={card.IsNewGadgetLabel}
@@ -52,6 +53,7 @@ export const CategoryHeadphones = () => {
             <GadgetCard
               GadgetName={card.gadgetName}
               GadgetDetails={card.gadgetDetails}
+              GadgetSpecURL={card.gadgetPageURL}
               Src={card.gadgetImageURL}
               Alt={card.gadgetImageAlt}
               IsNewLabel={card.IsNewGadgetLabel}
@@ -78,6 +80,7 @@ export const CategorySpeakers = () => {
             <GadgetCard
               GadgetName={card.gadgetName}
               GadgetDetails={card.gadgetDetails}
+              GadgetSpecURL={card.gadgetPageURL}
               Src={card.gadgetImageURL}
               Alt={card.gadgetImageAlt}
               IsNewLabel={card.IsNewGadgetLabel}
