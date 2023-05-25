@@ -60,7 +60,8 @@ export const {
     },
   },
   media: {
-    bp1: "(min-width: 480px)",
+    bp1: "(max-width: 1200px)",
+    bp2: "(max-width: 900px)",
   },
   utils: {
     // Abbreviated margin properties

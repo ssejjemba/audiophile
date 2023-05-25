@@ -12,6 +12,11 @@ const CategoryCard = styled("div", {
   height: "284px",
   background: "$gray400",
   borderRadius: "8px",
+
+  "@bp1": {
+    width: "300px",
+    height: "250px",
+  },
 });
 
 const CardImage = styled("div", {
