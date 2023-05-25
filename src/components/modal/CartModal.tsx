@@ -136,7 +136,7 @@ export const CartModal = (props: CartModalProps) => {
             <HeadingText>CART</HeadingText>
             <HeadingNum>({props.quantity})</HeadingNum>
           </ModalHeading>
-          <RemoveAllBtn onClick={() => removeFromCart(-1)}>
+          <RemoveAllBtn onClick={() => removeFromCart()}>
             Remove All
           </RemoveAllBtn>
         </ContentHeadingBox>

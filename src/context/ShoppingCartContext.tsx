@@ -17,13 +17,14 @@ type ShoppingCartContext = {
   getItemQuantity: (id: number) => number;
   increaseCartQuantity: (id: number) => void;
   decreaseCartQuantity: (id: number) => void;
-  removeFromCart: (id: number) => void;
+  removeFromCart: () => void;
   cartQuantity: number;
   cartItems: cartItem[];
 };
 
 const ShoppingCartContext = createContext({} as ShoppingCartContext);
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useShoppingCart() {
   return useContext(ShoppingCartContext);
 }
