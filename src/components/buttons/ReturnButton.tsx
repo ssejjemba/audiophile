@@ -1,5 +1,5 @@
 import { styled } from "@stitches/react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 type ReturnBtnProps = {
   text: string;
@@ -23,9 +23,6 @@ const ReturnBtn = styled("button", {
 });
 
 export const ReturnButton = ({ text }: ReturnBtnProps) => {
-  return (
-    <Link to={`/`}>
-      <ReturnBtn>{text}</ReturnBtn>
-    </Link>
-  );
+  const navigate = useNavigate();
+  return <ReturnBtn onClick={() => navigate(-1)}>{text}</ReturnBtn>;
 };
