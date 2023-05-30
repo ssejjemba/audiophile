@@ -20,6 +20,10 @@ const ReturnBtn = styled("button", {
   opacity: "0.5",
   marginTop: "79px",
   marginLeft: "100px",
+
+  "&:hover": {
+    color: "$primary",
+  },
 });
 
 export const ReturnButton = ({ text }: ReturnBtnProps) => {
