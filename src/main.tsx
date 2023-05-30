@@ -6,6 +6,7 @@ import App from "./App.tsx";
 import { CategoryHeadphones } from "./pages/categories/Category.tsx";
 import { CategorySpeakers } from "./pages/categories/Category.tsx";
 import { CategoryEarphones } from "./pages/categories/Category.tsx";
+import { Checkout } from "./pages/checkout/Checkout.tsx";
 import { MarkIIHeadphoneSpecs } from "./pages/product-spec/MarkIIProductSpecs.tsx";
 import { MarkIHeadphoneSpecs } from "./pages/product-spec/MarkIProductSpec.tsx";
 import { XX59headphoneSpecs } from "./pages/product-spec/XX59ProductSpecs.tsx";
@@ -16,6 +17,7 @@ import Data from "./data/data.json";
 import { globalCss } from "../stitches.config.ts";
 import { ShoppingCartContextProvider } from "./context/ShoppingCartContext.tsx";
 
+const newLocal = "cart/checkout";
 const router = createBrowserRouter([
   // Root Home Route
   {
@@ -35,6 +37,11 @@ const router = createBrowserRouter([
   {
     path: `${Data.categories.speakersCategory.url}`,
     element: <CategorySpeakers />,
+  },
+  // Cart Checkout Route
+  {
+    path: newLocal,
+    element: <Checkout />,
   },
   // Product Spec Routes
   {

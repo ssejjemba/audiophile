@@ -98,7 +98,7 @@ const TotalCostFigure = styled("span", {
   color: "$black",
 });
 
-const CartModalBtn = styled("button", {
+const CartModalBtn = styled("a", {
   width: "100%",
   border: "none",
   outline: "none",
@@ -119,7 +119,7 @@ const CartModalBtn = styled("button", {
 
 export const CartModal = (props: CartModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
-  const { removeFromCart, cartItems, closeCart } = useShoppingCart();
+  const { removeFromCart, cartItems } = useShoppingCart();
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const closeModal = (event: any) => {
@@ -156,7 +156,8 @@ export const CartModal = (props: CartModalProps) => {
             )}
           </TotalCostFigure>
         </TotalCostContainer>
-        <CartModalBtn onClick={closeCart}>Checkout</CartModalBtn>
+
+        <CartModalBtn href="/cart/checkout">Checkout</CartModalBtn>
       </CartModalContent>
     </CartModalContainer>
   ) : null;

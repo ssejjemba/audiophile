@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export type GadgetCardProps = {
   GadgetName: string;
   GadgetDetails: string;
-  GadgetSpecURL: string;
+  GadgetSpecURL?: string;
   IsNewLabel: boolean;
   IsCardEven: boolean;
   hasSpec: boolean;
