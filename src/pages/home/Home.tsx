@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <>
       <HomeSection>
-        <NavigationBar hasBorder />
+        <NavigationBar hasBorder hasNotification />
         <Hero />
       </HomeSection>
       <Categories />

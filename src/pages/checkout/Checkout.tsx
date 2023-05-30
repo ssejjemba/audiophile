@@ -11,7 +11,7 @@ const NavWrapper = styled("header", {
 export const Checkout = () => {
   return (
     <NavWrapper>
-      <NavigationBar hasBorder={false} />;
+      <NavigationBar hasBorder={false} hasNotification={false} />;
     </NavWrapper>
   );
 };

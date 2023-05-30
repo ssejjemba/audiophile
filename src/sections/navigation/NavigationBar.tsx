@@ -1,9 +1,11 @@
 import { styled } from "@stitches/react";
 import Data from "../../data/data.json";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
+import { Notification } from "../../components/notification-box/Notication";
 
 type NavProps = {
   hasBorder: boolean;
+  hasNotification: boolean;
 };
 
 const Nav = styled("nav", {
@@ -52,24 +54,7 @@ const CartButton = styled("button", {
   position: "relative",
 });
 
-const NotificationBox = styled("div", {
-  width: "20px",
-  height: "20px",
-  background: "Red",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  borderRadius: "50%",
-  padding: "4px",
-  color: "$white",
-
-  position: "absolute",
-  top: "0",
-  right: "0",
-  transform: "translate(10px, 13px)",
-});
-
-export const NavigationBar = ({ hasBorder }: NavProps) => {
+export const NavigationBar = ({ hasBorder, hasNotification }: NavProps) => {
   const { openCart, cartQuantity } = useShoppingCart();
 
   return (
@@ -126,7 +111,9 @@ export const NavigationBar = ({ hasBorder }: NavProps) => {
             fill="white"
           />
         </svg>
-        {cartQuantity > 0 && <NotificationBox>{cartQuantity}</NotificationBox>}
+        {cartQuantity > 0 && hasNotification && (
+          <Notification quantity={cartQuantity} />
+        )}
       </CartButton>
     </Nav>
   );

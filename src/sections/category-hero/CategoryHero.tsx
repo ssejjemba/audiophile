@@ -27,7 +27,7 @@ const HeroHeading = styled("h2", {
 export const CategoryHero = ({ title }: CategoryHeroProps) => {
   return (
     <CategoryHeroSection>
-      <NavigationBar />
+      <NavigationBar hasBorder={false} hasNotification />
       <HeroHeadingContainer>
         <HeroHeading>{title}</HeroHeading>
       </HeroHeadingContainer>

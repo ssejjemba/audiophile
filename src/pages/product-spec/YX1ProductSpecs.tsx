@@ -55,7 +55,7 @@ export const YX1EarphoneSpecs = () => {
   return (
     <>
       <NavWrapper>
-        <NavigationBar hasBorder={false} />
+        <NavigationBar hasBorder={false} hasNotification />
       </NavWrapper>
       <SpecsMainContainer>
         <ReturnButton text="Go Back" />

@@ -17,7 +17,7 @@ import Data from "./data/data.json";
 import { globalCss } from "../stitches.config.ts";
 import { ShoppingCartContextProvider } from "./context/ShoppingCartContext.tsx";
 
-const newLocal = "cart/checkout";
+const cartCheckoutURL = "cart/checkout";
 const router = createBrowserRouter([
   // Root Home Route
   {
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
   },
   // Cart Checkout Route
   {
-    path: newLocal,
+    path: cartCheckoutURL,
     element: <Checkout />,
   },
   // Product Spec Routes
