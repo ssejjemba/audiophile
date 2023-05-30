@@ -1,6 +1,8 @@
 import { styled } from "@stitches/react";
 import { NavigationBar } from "../../sections/navigation/NavigationBar";
 import { ReturnButton } from "../../components/buttons/ReturnButton";
+import { FormField } from "../../components/form-feild/FormField";
+import { InputText } from "../../components/input/InputText";
 
 const CheckoutSection = styled("section", {
   width: "100%",
@@ -40,6 +42,16 @@ const CartSummary = styled("div", {
   borderRadius: "8px",
 });
 
+const BillingContainer = styled("div", {
+  marginTop: "41px",
+});
+
+const BillingDetails = styled("div", {
+  marginTop: "16px",
+  display: "flex",
+  gap: "16px",
+});
+
 const CheckoutHeading = styled("h2", {});
 
 export const Checkout = () => {
@@ -52,6 +64,17 @@ export const Checkout = () => {
       <CheckoutContainer>
         <CheckoutForm action="" method="get">
           <CheckoutHeading>Checkout</CheckoutHeading>
+          <BillingContainer>
+            <FormField text="billing details">
+              <BillingDetails>
+                <InputText label="Name" placeHolder="Please enter your Name" />
+                <InputText
+                  label="Email"
+                  placeHolder="Please enter your Email"
+                />
+              </BillingDetails>
+            </FormField>
+          </BillingContainer>
         </CheckoutForm>
         <CartSummary></CartSummary>
       </CheckoutContainer>
