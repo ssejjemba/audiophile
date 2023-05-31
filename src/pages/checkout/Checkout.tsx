@@ -47,10 +47,14 @@ const BillingContainer = styled("div", {
   marginTop: "41px",
 });
 
-const BillingDetails = styled("div", {
+const BillingTextDetails = styled("div", {
   marginTop: "16px",
   display: "flex",
   gap: "16px",
+});
+
+const BillingNumberDetails = styled("div", {
+  marginTop: "24px",
 });
 
 const CheckoutHeading = styled("h2", {});
@@ -67,7 +71,7 @@ export const Checkout = () => {
           <CheckoutHeading>Checkout</CheckoutHeading>
           <BillingContainer>
             <FormField text="billing details">
-              <BillingDetails>
+              <BillingTextDetails>
                 <InputText
                   type="text"
                   label="Name"
@@ -81,7 +85,15 @@ export const Checkout = () => {
                   id="email"
                   validationFn={validateEmail}
                 />
-              </BillingDetails>
+              </BillingTextDetails>
+              <BillingNumberDetails>
+                <InputText
+                  type="tel"
+                  label="Phone Number"
+                  placeholder="+1 (202) 555-0136"
+                  id="number"
+                />
+              </BillingNumberDetails>
             </FormField>
           </BillingContainer>
         </CheckoutForm>

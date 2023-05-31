@@ -34,7 +34,12 @@ const TextInputWrapper = styled("div", {
 });
 
 const ErrorMessage = styled("span", {
-  color: "Red",
+  fontStyle: "normal",
+  fontWeight: "500",
+  fontSize: "12px",
+  lineHeight: "16px",
+  letterSpacing: "-0.2",
+  color: "#CD2C2C",
 });
 
 const TextInput = styled("input", {
@@ -73,7 +78,12 @@ export const InputText = (props: InputTextProps) => {
   return (
     <InputTextContainer>
       <TextInputWrapper>
-        <Textlabel htmlFor={props.id}>{props.label}</Textlabel>
+        <Textlabel
+          style={error ? { color: "#CD2C2C" } : { color: "" }}
+          htmlFor={props.id}
+        >
+          {props.label}
+        </Textlabel>
         <ErrorMessage>{error}</ErrorMessage>
       </TextInputWrapper>
       <TextInput
