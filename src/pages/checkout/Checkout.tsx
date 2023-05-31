@@ -2,7 +2,8 @@ import { styled } from "@stitches/react";
 import { NavigationBar } from "../../sections/navigation/NavigationBar";
 import { ReturnButton } from "../../components/buttons/ReturnButton";
 import { FormField } from "../../components/form-feild/FormField";
-import { InputText } from "../../components/input/InputText";
+import { InputText } from "../../components/input/text/InputText";
+import { validateEmail } from "../../utilities/validateEmail";
 
 const CheckoutSection = styled("section", {
   width: "100%",
@@ -67,10 +68,18 @@ export const Checkout = () => {
           <BillingContainer>
             <FormField text="billing details">
               <BillingDetails>
-                <InputText label="Name" placeHolder="Please enter your Name" />
                 <InputText
+                  type="text"
+                  label="Name"
+                  placeholder="Please enter your Name"
+                  id="name"
+                />
+                <InputText
+                  type="text"
                   label="Email"
-                  placeHolder="Please enter your Email"
+                  placeholder="Please enter your Email"
+                  id="email"
+                  validationFn={validateEmail}
                 />
               </BillingDetails>
             </FormField>
