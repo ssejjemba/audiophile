@@ -145,6 +145,10 @@ const globalStyles = globalCss({
     outline: "none",
     border: "none",
   },
+  ".form__radio-input:checked ~ .form__radio-label .form__radio-button::after":
+    {
+      opacity: "1",
+    },
 });
 
 export const Root = () => {

@@ -4,6 +4,7 @@ import { ReturnButton } from "../../components/buttons/ReturnButton";
 import { FormField } from "../../components/form-feild/FormField";
 import { InputText } from "../../components/input/text/InputText";
 import { validateEmail } from "../../utilities/validateEmail";
+import { InputRadio } from "../../components/input/radio/InputRadio";
 
 const CheckoutSection = styled("section", {
   width: "100%",
@@ -83,6 +84,8 @@ const PaymentDetailsContainer = styled("div", {
 const PaymentDetails = styled("div", {
   marginTop: "16px",
   display: "flex",
+  alignItems: "flex-start",
+  justifyContent: "space-between",
 });
 
 const PaymentDetailsHeadingBox = styled("div", {
@@ -96,6 +99,12 @@ const PaymentDetailsHeading = styled("p", {
   lineHeight: "16px",
   letterSpacing: "-0.2",
   color: "$black",
+});
+
+const PaymentOptions = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  gap: "16px",
 });
 
 const CheckoutHeading = styled("h2", {});
@@ -178,6 +187,10 @@ export const Checkout = () => {
                 <PaymentDetailsHeadingBox>
                   <PaymentDetailsHeading>Payment Method</PaymentDetailsHeading>
                 </PaymentDetailsHeadingBox>
+                <PaymentOptions>
+                  <InputRadio id="e_money" label="e-Money" />
+                  <InputRadio id="cash_on_delivery" label="Cash on Delivery" />
+                </PaymentOptions>
               </PaymentDetails>
             </FormField>
           </PaymentDetailsContainer>
