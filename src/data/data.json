@@ -70,6 +70,14 @@
     }
   ],
 
+  "checkout": {
+    "checkoutIcons": {
+      "cashIcon": "/checkout/icon-cash-on-delivery.svg",
+      "confirmIcon": "/checkout/icon-order-confirmation.svg"
+    },
+    "checkoutText": "The ‘Cash on Delivery’ option enables you to pay in cash when our delivery courier arrives at your residence. Just make sure your address is correct so that your order will not be cancelled."
+  },
+
   "headphonesCategory": {
     "productTitle": "headphones",
     "headphones": {

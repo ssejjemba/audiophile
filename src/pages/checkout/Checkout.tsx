@@ -5,6 +5,7 @@ import { FormField } from "../../components/form-feild/FormField";
 import { InputText } from "../../components/input/text/InputText";
 import { validateEmail } from "../../utilities/validateEmail";
 import { InputRadio } from "../../components/input/radio/InputRadio";
+import Data from "../../data/data.json";
 
 const CheckoutSection = styled("section", {
   width: "100%",
@@ -109,6 +110,38 @@ const PaymentOptions = styled("div", {
 
 const CheckoutHeading = styled("h2", {});
 
+const PaymentInfo = styled("div", {
+  display: "flex",
+  alignItems: "flex-start",
+  justifyContent: "flex-start",
+  gap: "16px",
+  marginTop: "30px",
+});
+
+const PaymentInfoImage = styled("div", {
+  display: "inline-block",
+});
+
+const PaymentInfoImg = styled("img", {
+  width: "48px",
+  height: "48px",
+  objectFit: "cover",
+});
+
+const PaymentInfoTextBox = styled("div", {
+  display: "",
+});
+
+const PaymentInfoText = styled("p", {
+  fontSize: "15px",
+  fontStyle: "normal",
+  fontWeight: "500",
+  lineHeight: "25px",
+  color: "$black",
+  mixBlendMode: "normal",
+  opacity: "0.5",
+});
+
 export const Checkout = () => {
   return (
     <CheckoutSection>
@@ -192,6 +225,19 @@ export const Checkout = () => {
                   <InputRadio id="cash_on_delivery" label="Cash on Delivery" />
                 </PaymentOptions>
               </PaymentDetails>
+              <PaymentInfo>
+                <PaymentInfoImage>
+                  <PaymentInfoImg
+                    src={Data.checkout.checkoutIcons.cashIcon}
+                    alt="Cash Icon"
+                  />
+                </PaymentInfoImage>
+                <PaymentInfoTextBox>
+                  <PaymentInfoText>
+                    {Data.checkout.checkoutText}
+                  </PaymentInfoText>
+                </PaymentInfoTextBox>
+              </PaymentInfo>
             </FormField>
           </PaymentDetailsContainer>
         </CheckoutForm>
