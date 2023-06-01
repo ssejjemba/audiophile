@@ -57,6 +57,47 @@ const BillingNumberDetails = styled("div", {
   marginTop: "24px",
 });
 
+const ShoppingInfoContainer = styled("div", {
+  marginTop: "53px",
+});
+
+const ShoppingAddress = styled("div", {
+  width: "100%",
+  marginTop: "16px",
+});
+
+const ShoppingCityCode = styled("div", {
+  display: "flex",
+  gap: "16px",
+  marginTop: "24px",
+});
+
+const ShoppingCountry = styled("div", {
+  marginTop: "24px",
+});
+
+const PaymentDetailsContainer = styled("div", {
+  marginTop: "61px",
+});
+
+const PaymentDetails = styled("div", {
+  marginTop: "16px",
+  display: "flex",
+});
+
+const PaymentDetailsHeadingBox = styled("div", {
+  display: "block",
+});
+
+const PaymentDetailsHeading = styled("p", {
+  fontStyle: "normal",
+  fontWeight: "700",
+  fontSize: "12px",
+  lineHeight: "16px",
+  letterSpacing: "-0.2",
+  color: "$black",
+});
+
 const CheckoutHeading = styled("h2", {});
 
 export const Checkout = () => {
@@ -96,6 +137,50 @@ export const Checkout = () => {
               </BillingNumberDetails>
             </FormField>
           </BillingContainer>
+          <ShoppingInfoContainer>
+            <FormField text="shipping info">
+              <ShoppingAddress>
+                <InputText
+                  style={{ width: "100%" }}
+                  type="url"
+                  label="Address"
+                  placeholder="1137 Williams Avenue"
+                  id="address"
+                />
+              </ShoppingAddress>
+              <ShoppingCityCode>
+                <InputText
+                  type="text"
+                  label="ZIP Code"
+                  placeholder="10001"
+                  id="zip_code"
+                />
+                <InputText
+                  type="text"
+                  label="City"
+                  placeholder="New York"
+                  id="city"
+                />
+              </ShoppingCityCode>
+              <ShoppingCountry>
+                <InputText
+                  type="text"
+                  label="Country"
+                  placeholder="United States"
+                  id="country"
+                />
+              </ShoppingCountry>
+            </FormField>
+          </ShoppingInfoContainer>
+          <PaymentDetailsContainer>
+            <FormField text="payment details">
+              <PaymentDetails>
+                <PaymentDetailsHeadingBox>
+                  <PaymentDetailsHeading>Payment Method</PaymentDetailsHeading>
+                </PaymentDetailsHeadingBox>
+              </PaymentDetails>
+            </FormField>
+          </PaymentDetailsContainer>
         </CheckoutForm>
         <CartSummary></CartSummary>
       </CheckoutContainer>

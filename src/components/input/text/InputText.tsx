@@ -6,6 +6,7 @@ export type InputTextProps = {
   label?: string;
   id?: string;
   type?: string;
+  style?: object;
   placeholder?: string;
   validationFn?: (text: string) => string;
 };
@@ -24,6 +25,7 @@ const Textlabel = styled("label", {
   lineHeight: "16px",
   letterSpacing: "-0.2px",
   color: "$black",
+  marginLeft: "2px",
 });
 
 const TextInputWrapper = styled("div", {
@@ -87,6 +89,7 @@ export const InputText = (props: InputTextProps) => {
         <ErrorMessage>{error}</ErrorMessage>
       </TextInputWrapper>
       <TextInput
+        style={props.style}
         type={props.type}
         id={props.id}
         ref={innerRef}
