@@ -23,7 +23,7 @@ const NavWrapper = styled("header", {
 const CheckoutContainer = styled("div", {
   width: "100%",
   height: "fit-content",
-  padding: "0 100px",
+  padding: "0 100px 50px",
   display: "flex",
   alignItems: "flex-start",
   justifyContent: "flex-start",
@@ -32,7 +32,7 @@ const CheckoutContainer = styled("div", {
 
 const CheckoutForm = styled("form", {
   width: "730px",
-  height: "1126px",
+  height: "fit-content",
   background: "$white",
   borderRadius: "8px",
   padding: "48px",
