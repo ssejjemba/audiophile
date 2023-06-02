@@ -6,6 +6,9 @@ import { InputText } from "../../components/input/text/InputText";
 import { validateEmail } from "../../utilities/validateEmail";
 import { InputRadio } from "../../components/input/radio/InputRadio";
 import Data from "../../data/data.json";
+import { useShoppingCart } from "../../context/ShoppingCartContext";
+import { Cart } from "../../components/card/Cart";
+import { formatCurrency } from "../../utilities/formatCurrency";
 
 const CheckoutSection = styled("section", {
   width: "100%",
@@ -40,9 +43,10 @@ const CheckoutForm = styled("form", {
 
 const CartSummary = styled("div", {
   width: "350px",
-  height: "612px",
+  height: "fit-content",
   background: "$white",
   borderRadius: "8px",
+  padding: "33px",
 });
 
 const BillingContainer = styled("div", {
@@ -142,7 +146,99 @@ const PaymentInfoText = styled("p", {
   opacity: "0.5",
 });
 
+const CartSummaryHeading = styled("h5", {
+  color: "$black",
+  marginBottom: "31px",
+});
+
+const CartSummaryStats = styled("div", {
+  marginTop: "31px",
+});
+
+const TotalCostContainer = styled("p", {
+  width: "100%",
+  height: "fit-content",
+  display: "flex",
+  justifyContent: "space-between",
+  marginBottom: "8px",
+});
+
+const SummaryStatsText = styled("span", {
+  fontStyle: "normal",
+  fontWeight: "500",
+  fontSize: "15px",
+  lineHeight: "25px",
+  color: "$black",
+  mixBlendMode: "normal",
+  opacity: "0.5",
+  textTransform: "uppercase",
+});
+
+const SummaryStatsFigure = styled("span", {
+  fontStyle: "normal",
+  fontWeight: "700",
+  fontSize: "18px",
+  lineHeight: "25px",
+  textAlign: "center",
+  textTransform: "uppercase",
+  color: "$black",
+});
+
+const ShippingCostContainer = styled("p", {
+  width: "100%",
+  height: "fit-content",
+  display: "flex",
+  justifyContent: "space-between",
+  marginBottom: "8px",
+});
+
+const VatCostContainer = styled("p", {
+  width: "100%",
+  height: "fit-content",
+  display: "flex",
+  justifyContent: "space-between",
+  marginBottom: "24px",
+});
+
+const GrandTotalContainer = styled("p", {
+  width: "100%",
+  height: "fit-content",
+  display: "flex",
+  justifyContent: "space-between",
+  marginBottom: "32px",
+});
+
+const ButtonWrapper = styled("div", {
+  display: "block",
+  width: "100%",
+});
+
+const CartModalBtn = styled("a", {
+  display: "block",
+  width: "100%",
+  border: "none",
+  outline: "none",
+  margin: "0",
+  padding: "15px 30px",
+  cursor: "pointer",
+  background: "$primary",
+  color: "$white",
+
+  fontStyle: "normal",
+  fontWeight: "700",
+  fontSize: "13px",
+  lineHeight: "18px",
+  textAlign: "center",
+  letterSpacing: "1px",
+  textTransform: "uppercase",
+
+  "&:hover": {
+    background: "$light",
+  },
+});
+
 export const Checkout = () => {
+  const { cartItems } = useShoppingCart();
   return (
     <CheckoutSection>
       <NavWrapper>
@@ -241,7 +337,79 @@ export const Checkout = () => {
             </FormField>
           </PaymentDetailsContainer>
         </CheckoutForm>
-        <CartSummary></CartSummary>
+        <CartSummary>
+          <CartSummaryHeading>summary</CartSummaryHeading>
+          {cartItems.map((item) => (
+            <Cart key={item.id} {...item} isCartCheckout />
+          ))}
+          <CartSummaryStats>
+            <TotalCostContainer>
+              <SummaryStatsText>Total</SummaryStatsText>
+              <SummaryStatsFigure>
+                {formatCurrency(
+                  cartItems.reduce((total, cartItem) => {
+                    const item = Data.cartItems.find(
+                      (i) => i.itemId === cartItem.id
+                    );
+                    return total + (item?.itemPrice || 0) * cartItem.quantity;
+                  }, 0)
+                )}
+              </SummaryStatsFigure>
+            </TotalCostContainer>
+            <ShippingCostContainer>
+              <SummaryStatsText>SHIPPING</SummaryStatsText>
+              <SummaryStatsFigure>
+                {formatCurrency(
+                  cartItems.reduce((total, cartItem) => {
+                    const item = Data.cartItems.find(
+                      (i) => i.itemId === cartItem.id
+                    );
+                    return (
+                      total + ((item?.itemWeight || 0) * cartItem.quantity) / 5
+                    );
+                  }, 0)
+                )}
+              </SummaryStatsFigure>
+            </ShippingCostContainer>
+            <VatCostContainer>
+              <SummaryStatsText>VAT (INCLUDED)</SummaryStatsText>
+              <SummaryStatsFigure>
+                {formatCurrency(
+                  cartItems.reduce((total, cartItem) => {
+                    const item = Data.cartItems.find(
+                      (i) => i.itemId === cartItem.id
+                    );
+                    return (
+                      total + ((item?.itemPrice || 0) * (100 + 0.18)) / 100
+                    );
+                  }, 0)
+                )}
+              </SummaryStatsFigure>
+            </VatCostContainer>
+            <GrandTotalContainer>
+              <SummaryStatsText>GRAND TOTAL</SummaryStatsText>
+              <SummaryStatsFigure>
+                {formatCurrency(
+                  cartItems.reduce((total, cartItem) => {
+                    const item = Data.cartItems.find(
+                      (i) => i.itemId === cartItem.id
+                    );
+                    total += (item?.itemPrice || 0) * cartItem.quantity;
+
+                    total += ((item?.itemWeight || 0) * cartItem.quantity) / 5;
+
+                    total += ((item?.itemPrice || 0) * (100 + 0.18)) / 100;
+
+                    return total;
+                  }, 0)
+                )}
+              </SummaryStatsFigure>
+            </GrandTotalContainer>
+            <ButtonWrapper>
+              <CartModalBtn href="#">Continue</CartModalBtn>
+            </ButtonWrapper>
+          </CartSummaryStats>
+        </CartSummary>
       </CheckoutContainer>
     </CheckoutSection>
   );

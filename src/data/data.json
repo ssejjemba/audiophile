@@ -26,7 +26,8 @@
       "itemName": "XX99 MK II",
       "itemImageSrc": "/cart/image-xx99-mark-two-headphones.jpg",
       "itemImageAlt": "XX99 MK II Image",
-      "itemPrice": 2999
+      "itemPrice": 2999,
+      "itemWeight": 2
     },
 
     {
@@ -34,7 +35,8 @@
       "itemName": "XX99 MK I",
       "itemImageSrc": "/cart/image-xx99-mark-one-headphones.jpg",
       "itemImageAlt": "XX99 MK I Image",
-      "itemPrice": 1750
+      "itemPrice": 1750,
+      "itemWeight": 2
     },
 
     {
@@ -42,7 +44,8 @@
       "itemName": "XX59",
       "itemImageSrc": "/cart/image-xx59-headphones.jpg",
       "itemImageAlt": "XX59 headphones Image",
-      "itemPrice": 899
+      "itemPrice": 899,
+      "itemWeight": 2
     },
 
     {
@@ -50,7 +53,8 @@
       "itemName": "ZX7 Speaker",
       "itemImageSrc": "/cart/image-zx7-speaker.jpg",
       "itemImageAlt": "ZX7 Speaker Image",
-      "itemPrice": 3500
+      "itemPrice": 3500,
+      "itemWeight": 8
     },
 
     {
@@ -58,7 +62,8 @@
       "itemName": "ZX9 Speaker",
       "itemImageSrc": "/cart/image-zx9-speaker.jpg",
       "itemImageAlt": "ZX9 Speaker Image",
-      "itemPrice": 4500
+      "itemPrice": 4500,
+      "itemWeight": 8
     },
 
     {
@@ -66,7 +71,8 @@
       "itemName": "YX1",
       "itemImageSrc": "/cart/image-yx1-earphones.jpg",
       "itemImageAlt": "YX1 Image",
-      "itemPrice": 599
+      "itemPrice": 599,
+      "itemWeight": 1
     }
   ],
 

@@ -3,10 +3,12 @@ import { StateButton } from "../buttons/StateButton";
 // import { useShoppingCart } from "../../context/ShoppingCartContext";
 import Data from "../../data/data.json";
 import { formatCurrency } from "../../utilities/formatCurrency";
+import { useShoppingCart } from "../../context/ShoppingCartContext";
 
 type CartProps = {
   id: number;
   quantity: number;
+  isCartCheckout: boolean;
 };
 
 const CartItemsContainer = styled("div", {
@@ -72,7 +74,19 @@ const ButtonWrapper = styled("div", {
   alignItems: "center",
 });
 
+const CartItemsSpan = styled("span", {
+  fontStyle: "normal",
+  fontWeight: "700",
+  fontSize: "15px",
+  lineHeight: "25px",
+  color: "$black",
+  mixBlendMode: "normal",
+  opacity: "0.5",
+});
+
 export const Cart = (props: CartProps) => {
+  const { getItemQuantity } = useShoppingCart();
+  const itemsQuantity = getItemQuantity(props.id);
   const item = Data.cartItems.find((i) => i.itemId === props.id);
 
   if (item == null) return null;
@@ -87,9 +101,13 @@ export const Cart = (props: CartProps) => {
             <CartItemPrice>{formatCurrency(item.itemPrice)}</CartItemPrice>
           </CartItemCaption>
         </CartItemThumbnail>
-        <ButtonWrapper>
-          <StateButton id={props.id} />
-        </ButtonWrapper>
+        {props.isCartCheckout ? (
+          <CartItemsSpan>x{itemsQuantity}</CartItemsSpan>
+        ) : (
+          <ButtonWrapper>
+            <StateButton id={props.id} />
+          </ButtonWrapper>
+        )}
       </CartItemCard>
     </CartItemsContainer>
   );

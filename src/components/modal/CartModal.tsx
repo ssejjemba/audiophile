@@ -84,6 +84,7 @@ const TotalCostText = styled("span", {
   fontSize: "15px",
   lineHeight: "25px",
   color: "$black",
+  textTransform: "uppercase",
   mixBlendMode: "normal",
   opacity: "0.5",
 });
@@ -141,7 +142,7 @@ export const CartModal = (props: CartModalProps) => {
           </RemoveAllBtn>
         </ContentHeadingBox>
         {cartItems.map((item) => (
-          <Cart key={item.id} {...item} />
+          <Cart key={item.id} {...item} isCartCheckout={false} />
         ))}
         <TotalCostContainer>
           <TotalCostText>Total</TotalCostText>
