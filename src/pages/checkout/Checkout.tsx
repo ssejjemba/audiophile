@@ -406,7 +406,7 @@ export const Checkout = () => {
               </SummaryStatsFigure>
             </GrandTotalContainer>
             <ButtonWrapper>
-              <CartModalBtn href="#">Continue</CartModalBtn>
+              <CartModalBtn href="#">Continue & Pay</CartModalBtn>
             </ButtonWrapper>
           </CartSummaryStats>
         </CartSummary>
